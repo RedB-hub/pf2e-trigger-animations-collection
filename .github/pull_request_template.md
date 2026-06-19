@@ -3,6 +3,7 @@
 - [ ] This animation doesn't exist already?
 - [ ] Is this only **1** animation?
 - [ ] Pull Request is titled correctly `feat/<animation-source>`
+- [ ] File is named properly? (IE slug of it IE `shield-of-faith`)
 - [ ] Animation is properly tagged?
 - [ ] It's in the correct folder?
 - [ ] Does this follow formatting the guidelines in the readme?
