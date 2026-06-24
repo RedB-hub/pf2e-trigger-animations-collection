@@ -3,11 +3,7 @@
 */
 import fs from "node:fs";
 import p from "picocolors";
-import {
-  Log,
-  getAllJsonFiles,
-  safeJSONParse,
-} from "./helpers.mjs";
+import { Log, getAllJsonFiles, safeJSONParse } from "./helpers.mjs";
 
 const JSON_PATH = process.argv[2] || "./animations";
 
