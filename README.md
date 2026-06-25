@@ -16,6 +16,10 @@ Pack of animations for Trigger Animations! See the fully supported list [here](/
 
 ## Animation Submission Guidelines
 
+[![Static Badge](https://img.shields.io/badge/simplified_workflow-Upload_Animation_-blue)](https://chasarooniz.github.io/trigger-animations-simplied-upload-guide/)
+
+
+
 - **Acceptable Sources**
   - Currently the following are acceptable sources for animations/SFX
     - **[JB2A](https://www.patreon.com/JB2A)** (Note animations are built for the Patreon version primarily, but some may also have workarounds to support the free version)
