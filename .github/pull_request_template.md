@@ -4,7 +4,7 @@ _Note you don't need to literally check these off, just confirm you followed the
 
 - [ ] This animation doesn't exist [already](../ANIMATION_LIST.md)?
 - [ ] Is this PR for only one animation?
-- [ ] Pull Request is titled correctly `feat/<animation-source>`
+- [ ] Pull Request is titled clearly? (IE `Added: Void Scour`, `Updated: Wall of Force Sounds`)
 - [ ] File is named properly? (IE slug of it IE `shield-of-faith`)
 - [ ] Animation is named properly? (IE name of trigger item)
 - [ ] Animation is properly tagged?
