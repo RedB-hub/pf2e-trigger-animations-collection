@@ -31,12 +31,12 @@ _The following is WIP_
 - **Priority of Animations**
   - 0 - **Default**
   - **Weapons**
-    - 0 - **Group** `Firearm`
-    - 50 - **Base** `Gun Sword`
-    - 100 - **Specific** `Petrification Cannon`
+    - -100 - **Group** `Firearm`
+    - -50 - **Base** `Gun Sword`
+    - 0 - **Specific** `Petrification Cannon`
   - **Spells**
-    - 0 **Trait** `Fire` _this should mostly just be the cast animation_
-    - 50 **Specific Spell** `Fireball`
+    - -50 **Trait** `Fire` _this should mostly just be the cast animation_
+    - 0 **Specific Spell** `Fireball`
 
 ## Table of Contents
 
