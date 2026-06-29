@@ -81,6 +81,7 @@
 #### Cantrips
 
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
+- Guidance 🔇🆓 (✍🏼 @Chasarooni)
 - Scatter Scree 🔊🆓♾️ (✍🏼 @Chasarooni)
 
 #### Focus Spells

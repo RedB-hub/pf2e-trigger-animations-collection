@@ -111,7 +111,7 @@
     },
     {
       "type": "play",
-      "position": { "x": 2854.6650780547657, "y": 488.619347500251 },
+      "position": { "x": 3010.538093927781, "y": 472.90506178596536 },
       "id": "7NxAe2lrSb9HfH8T",
       "inputs": { "preload": { "value": true } }
     },
@@ -261,68 +261,32 @@
         "volume": { "value": 0.5 },
         "fadeInDelay": { "value": 1000 }
       },
-      "outs": { "out": { "connection": "3nHVOMuocr5dNHMO:ins:in" } }
-    },
-    {
-      "type": "execute-script",
-      "state": "script",
-      "outs": { "out": { "connection": "X5vJO8vPmrXfBq3x:ins:in" } },
-      "position": { "x": 965.6922799422791, "y": 1044.889538239538 },
-      "id": "bPHKzRXOh83acrlP",
-      "inputs": {
-        "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nreturn [{type: \"text\", value: game.settings.get(\"pf2e-trigger-animations-trove\", \"animation-config.persistent\")}];"
-        }
-      },
-      "custom": {
-        "outputs": {
-          "fCRsUH7vrx0IYeM8": {
-            "id": "fCRsUH7vrx0IYeM8",
-            "label": "Persistent",
-            "slug": "output",
-            "isArray": false,
-            "type": "text"
-          }
-        }
-      }
+      "outs": { "out": { "connection": "rUrBQVhN7uIHqy5p:ins:in" } }
     },
     {
       "custom": { "title": "Persistent" },
       "type": "__gate_exit__",
-      "position": { "x": 730.0753968253971, "y": 1053.698412698412 },
+      "position": { "x": 1275.2182539682542, "y": 1023.4126984126979 },
       "id": "ssDT0Uj4wZ574WU2",
-      "outs": { "out": { "connection": "bPHKzRXOh83acrlP:ins:in" } }
-    },
-    {
-      "type": "list-contains",
-      "position": { "x": 1285.9335386835392, "y": 1038.200865800866 },
-      "id": "X5vJO8vPmrXfBq3x",
-      "inputs": {
-        "list": { "connection": "D4nFtYA8RTYcLDWm:outputs:list" },
-        "entry": { "connection": "bPHKzRXOh83acrlP:outputs:fCRsUH7vrx0IYeM8" }
-      },
-      "outs": {
-        "false": { "connection": "7NxAe2lrSb9HfH8T:ins:in" },
-        "true": { "connection": "0DELBh5fiYz5YyaT:ins:in" }
-      }
-    },
-    {
-      "type": "list-value",
-      "position": { "x": 1009.5660173160172, "y": 944.8625541125543 },
-      "id": "D4nFtYA8RTYcLDWm",
-      "inputs": { "entry": { "value": "templates,all" } }
+      "outs": { "out": { "connection": "0DELBh5fiYz5YyaT:ins:in" } }
     },
     {
       "outs": { "out": { "connection": "ssDT0Uj4wZ574WU2:ins:in" } },
       "type": "__gate_entry__",
-      "position": { "x": 2586.4847652347657, "y": 490.50000000000045 },
+      "position": { "x": 2986.4847652347653, "y": 339.3888888888892 },
       "id": "3nHVOMuocr5dNHMO"
     },
     {
       "type": "effect",
       "position": { "x": 1526.5616883116886, "y": 1024.0404040404044 },
       "id": "0DELBh5fiYz5YyaT",
-      "outs": { "out": { "connection": "Jq2H0jGkcesLaag4:ins:in" } }
+      "outs": { "out": { "connection": "Jq2H0jGkcesLaag4:ins:in" } },
+      "inputs": {
+        "name": { "connection": "0HC0ejGIfwAMwq3C:outputs:ORwOjJ9EF0ULW2b8" },
+        "origin": {
+          "connection": "8kMlrRTHgPQ2QGTf:outputs:bwyxOYKlAtf25sb7"
+        }
+      }
     },
     {
       "type": "location",
@@ -404,6 +368,38 @@
         "delayMin": { "value": 4000 }
       },
       "outs": { "out": { "connection": "6HpPwSnjhiDLK5GU:ins:in" } }
+    },
+    {
+      "type": "get-setting",
+      "position": { "x": 2525, "y": 583 },
+      "id": "NuD325iiAIKUj3xA",
+      "custom": {
+        "outputs": {
+          "F1Y659jq1m2wnbdv": {
+            "id": "F1Y659jq1m2wnbdv",
+            "label": "Persistent",
+            "slug": "output",
+            "isArray": false,
+            "type": "boolean"
+          }
+        }
+      },
+      "inputs": {
+        "module": { "value": "pf2e-trigger-animations-trove" },
+        "key": { "value": "persistent.effects" }
+      }
+    },
+    {
+      "type": "split-boolean",
+      "inputs": {
+        "input": { "connection": "NuD325iiAIKUj3xA:outputs:F1Y659jq1m2wnbdv" }
+      },
+      "position": { "x": 2566.600205350206, "y": 475.66515151515193 },
+      "id": "rUrBQVhN7uIHqy5p",
+      "outs": {
+        "true": { "connection": "3nHVOMuocr5dNHMO:ins:in" },
+        "false": { "connection": "7NxAe2lrSb9HfH8T:ins:in" }
+      }
     }
   ],
   "variables": {
@@ -418,7 +414,7 @@
       "type": "any"
     }
   },
-  "tags": ["template"],
+  "tags": ["template", "pf2e", "spells", "cantrip"],
   "description": "<p><em>Created by @Chasarooni</em></p>",
-  "id": "da5umr4bryw37PSE"
+  "id": "CrOLXzt8YzX5ogUP"
 }
