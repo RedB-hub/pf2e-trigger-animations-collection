@@ -25,7 +25,18 @@ Pack of animations for Trigger Animations! See the fully supported list [here](/
   - **medium** - ~3 animations / ~3 sfx --- This is the aim for the majority of animations
   - **high** - more of them
   - **PERSISTENT** - includes persistent animations at all
-  -
+
+_The following is WIP_
+
+- **Priority of Animations**
+  - 0 - **Default**
+  - **Weapons**
+    - 0 - **Group** `Firearm`
+    - 50 - **Base** `Gun Sword`
+    - 100 - **Specific** `Petrification Cannon`
+  - **Spells**
+    - 0 **Trait** `Fire` _this should mostly just be the cast animation_
+    - 50 **Specific Spell** `Fireball`
 
 ## Table of Contents
 
