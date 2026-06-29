@@ -5,9 +5,9 @@ export function setupSettings() {
     name: "pf2e-trigger-animations-trove.module-settings.animation-config.persistent.name",
     hint: "pf2e-trigger-animations-trove.module-settings.animation-config.persistent.hint",
     scope: "world",
-    config: false,
+    config: true,
     type: String,
-    default: "low",
+    default: "templates",
     choices: {
       off: "pf2e-trigger-animations-trove.module-settings.animation-config.persistent.choices.off",
       templates:

@@ -65,7 +65,7 @@
     },
     {
       "type": "play",
-      "position": { "x": 982.2964527266994, "y": 129.6296985915386 },
+      "position": { "x": 1067.2964527266995, "y": 508.3796985915386 },
       "id": "kkkNTCli7BCyXs18",
       "inputs": { "preload": { "value": true } }
     },
@@ -98,12 +98,13 @@
         "towards": { "connection": "4gZJ8Gm9UjlhMc4G:outputs:target" },
         "missed": { "connection": "2bt2cdnyg4ntLfaK:outputs:boolean" }
       },
-      "position": { "x": 1998.465668183612, "y": 47.45157051876333 },
-      "id": "mzztRWLWfGStDgf8"
+      "position": { "x": 2044.715668183612, "y": 6.201570518763333 },
+      "id": "mzztRWLWfGStDgf8",
+      "outs": { "out": { "connection": "SZSMc93bnnwXgMSf:ins:in" } }
     },
     {
       "type": "massloop",
-      "position": { "x": 670.0002040592956, "y": 54.888896970017754 },
+      "position": { "x": 662.0002040592956, "y": 42.888896970017754 },
       "id": "4gZJ8Gm9UjlhMc4G",
       "inputs": {
         "targets": { "connection": "zwvWO50CXI44ObmF:outputs:targets" },
@@ -132,8 +133,25 @@
       "position": { "x": 1505.9046807058999, "y": 18.95236015319847 },
       "id": "Kfd0h5Nepcqvhmyb",
       "inputs": { "entry": { "value": "failure,criticalFailure" } }
+    },
+    {
+      "type": "sound",
+      "position": { "x": 1445.378787878788, "y": -359.5833333333333 },
+      "id": "SZSMc93bnnwXgMSf",
+      "inputs": { "file": { "value": "ggg-sfx.magic.earth.ranged.rock.02" } },
+      "outs": { "out": { "connection": "SdjACutYQqXvIRFd:ins:in" } }
+    },
+    {
+      "type": "snd-volume",
+      "position": { "x": 1773.7383727383715, "y": -364.063492063492 },
+      "id": "SdjACutYQqXvIRFd",
+      "inputs": {
+        "sound": { "connection": "SZSMc93bnnwXgMSf:outputs:sound" },
+        "volume": { "value": 0.5 },
+        "fadeInDelay": { "value": 600 }
+      }
     }
   ],
-  "id": "mJouBiyxUU3TKv2R",
-  "description": "<p><em>Created by @Chasarooni</em></p>"
+  "description": "<p><em>Created by @Chasarooni</em></p>",
+  "id": "pLgSjX7Oq9k3BmIc"
 }

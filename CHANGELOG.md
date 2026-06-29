@@ -1,7 +1,12 @@
 ## Unreleased
 
 - **New Animations**
-  - Hurtling Stone, Scatter Scree, Void Scour (@Chasarooni)
+  - Buzzing Bites, Hurtling Stone, Scatter Scree, Void Scour (@Chasarooni)
+
+## 0.0.10
+
+- Fixed persistence setting being not visible
+- Set default for persistence settings to `templates`
 
 ## 0.0.9
 

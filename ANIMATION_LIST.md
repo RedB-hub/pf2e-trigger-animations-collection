@@ -80,9 +80,12 @@
 
 #### Cantrips
 
-- Hurtling Stone 🔇🆓 (@Chasarooni)
+- Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
+- Scatter Scree 🔊🆓♾️ (✍🏼 @Chasarooni)
 
 #### Focus Spells
+
+- Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 
 #### 1st Rank Spells
 
