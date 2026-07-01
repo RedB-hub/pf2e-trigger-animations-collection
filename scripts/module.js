@@ -1,3 +1,4 @@
+import { askToAddNewAnimationsDialog } from "./enableNewAnimations.js";
 import { setupSettings } from "./settings.js";
 
 export const MODULE_ID = "pf2e-trigger-animations-trove";
@@ -7,6 +8,16 @@ Hooks.once("init", async function () {
 
 Hooks.once("ready", async function () {
   updateModulesEnabledSettings();
+
+  if (
+    game.user.isGM &&
+    foundry.utils.isNewerVersion(
+      game.modules.get(MODULE_ID).version,
+      game.settings.get(MODULE_ID, "last-updated-settings"),
+    )
+  ) {
+    await askToAddNewAnimationsDialog();
+  }
 });
 
 function updateModulesEnabledSettings() {
