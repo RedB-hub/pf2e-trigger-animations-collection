@@ -23,11 +23,15 @@ const CATEGORIES = {
   items: "Items",
   spells: "Spells",
 };
+const MODULE_TAG = "PF2e Trove";
 function getTagsAndCategory({ path, originalTags }) {
   const tags = new Set(originalTags);
   const pathSegments = path
     .slice(path.indexOf(PATH_START) + PATH_START_BOOST)
     .split(/[\\/]/);
+
+  tags.add(MODULE_TAG);
+
   // System Tag
   const system = pathSegments[SEGMENTS.SYSTEM];
   tags.add(system);

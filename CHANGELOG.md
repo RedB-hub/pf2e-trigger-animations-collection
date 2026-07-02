@@ -1,8 +1,12 @@
 ## Unreleased
 
 - **New Animations**
-  - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw (@Chasarooni)
+  - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded (@Chasarooni)
   - Fireball (@ChazPls)
+
+## 0.0.18
+
+- Added a tag for all animations from this module
 
 ## 0.0.17
 

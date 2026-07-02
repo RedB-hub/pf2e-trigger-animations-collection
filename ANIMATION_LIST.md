@@ -9,7 +9,7 @@
 - 🔊 Has Sounds
 - 🔇 No Sounds
 - ♾️ Has an optional persistent animation
-- 🥔 Has an option for a Potato quality animation (IE 1 sound + 1 animation max)
+- ✅ Has full quality levels support
 
 - **Credit**
   - ✍🏼 Created by
@@ -120,7 +120,35 @@
 
 ### Conditions
 
+- Blinded 🔇🆓 (✍🏼 @Chasarooni)
+- Clumsy 🔇🆓 (✍🏼 @Chasarooni)
+- Confused 🔇🆓✅ (✍🏼 @Chasarooni)
+- Controlled 🔇🆓 (✍🏼 @Chasarooni)
+- Dazzled 🔇🆓 (✍🏼 @Chasarooni)
+- Deafened 🔇🆓 (✍🏼 @Chasarooni)
+- Doomed 🔇🆓 (✍🏼 @Chasarooni)
+- Drained 🔇🆓 (✍🏼 @Chasarooni)
+- Dying 🔇🆓 (✍🏼 @Chasarooni)
+- Encumbered 🔇🆓 (✍🏼 @Chasarooni)
+- Enfeebled 🔇🆓 (✍🏼 @Chasarooni)
+- Fascinated 🔇🆓 (✍🏼 @Chasarooni)
+- Fatigued 🔇🆓 (✍🏼 @Chasarooni)
+- Fleeing 🔇🆓 (✍🏼 @Chasarooni)
+- Frightened 🔇🆓 (✍🏼 @Chasarooni)
+- Grabbed 🔇🆓 (✍🏼 @Chasarooni)
+- Immobilized 🔇🆓 (✍🏼 @Chasarooni)
+- Off-Guard 🔇🆓 (✍🏼 @Chasarooni)
+- Paralyzed 🔇🆓 (✍🏼 @Chasarooni)
 - Persistent Damage 🔇🆓 (✍🏼 @Chasarooni)
+- Petrified 🔇🆓 (✍🏼 @Chasarooni)
+- Prone 🔇🆓 (✍🏼 @Chasarooni)
+- Quickened 🔇🆓 (✍🏼 @Chasarooni)
+- Sickened 🔇🆓 (✍🏼 @Chasarooni)
+- Slowed 🔇🆓 (✍🏼 @Chasarooni)
+- Stunned 🔇🆓 (✍🏼 @Chasarooni)
+- Stupefied 🔇🆓 (✍🏼 @Chasarooni)
+- Unconscious 🔇🆓 (✍🏼 @Chasarooni)
+- Wounded 🔇🆓 (✍🏼 @Chasarooni)
 
 ### Feats
 
