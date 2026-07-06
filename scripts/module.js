@@ -8,7 +8,11 @@ const triggerEngineTriggersPath = `modules/${MODULE_ID}/triggers.json`;
 Hooks.once("init", async function () {
   setupSettings();
   Hooks.once("triggerEngine.registerTriggers", (registerTriggers) => {
-    registerTriggers("trigger-engine", "pf2e-trigger", triggersOrFilePath);
+    registerTriggers(
+      "trigger-engine",
+      "pf2e-trigger",
+      triggerEngineTriggersPath,
+    );
   });
 });
 
