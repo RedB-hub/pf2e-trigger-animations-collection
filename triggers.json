@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Effect / Condition Update Badge",
+    "folder": "Animations",
+    "priority": 0,
+    "id": "i5k5nisEifIYTP9H",
+    "nodes": [
+      {
+        "type": "execute-animation",
+        "position": { "x": 1747.7463180061714, "y": 139.427805979577 },
+        "id": "PEXiYyM5Qoo77FZK",
+        "inputs": {
+          "name": { "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77" },
+          "targets": { "connection": "iLQqpDvy8aS7XhpM:outputs:targets" },
+          "actor": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
+          },
+          "sources": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
+          },
+          "item": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" },
+          "options": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
+          }
+        }
+      },
+      {
+        "type": "extract-item",
+        "position": { "x": 482.6667067754819, "y": 60.00003046355749 },
+        "id": "mosxx1pPt8nuHzjX",
+        "custom": {
+          "outputs": {
+            "E85qTXVg1K7pfp77": {
+              "id": "E85qTXVg1K7pfp77",
+              "input": "slug",
+              "label": "Slug",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
+            },
+            "znIlg3Jak9mV1rDw": {
+              "id": "znIlg3Jak9mV1rDw",
+              "input": "type",
+              "label": "Type",
+              "slug": "path",
+              "isArray": false,
+              "type": "text"
+            },
+            "Xk3O4efifslHIdqZ": {
+              "id": "Xk3O4efifslHIdqZ",
+              "input": "parent",
+              "label": "Parent",
+              "slug": "path",
+              "isArray": false,
+              "type": "target"
+            }
+          }
+        },
+        "inputs": {
+          "input": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" }
+        },
+        "outs": { "out": { "connection": "3TzisWdJCV52USKq:ins:in" } }
+      },
+      {
+        "type": "scene-targets",
+        "position": { "x": 833.3055250177011, "y": 297.3056025299461 },
+        "id": "iLQqpDvy8aS7XhpM"
+      },
+      {
+        "type": "hook-called-event",
+        "position": { "x": 197.5555555555555, "y": 30.99999999999997 },
+        "id": "ZxdKeHGJd1pmBBiS",
+        "custom": {
+          "outputs": {
+            "TdOzBdcKWTlrReUL": {
+              "id": "TdOzBdcKWTlrReUL",
+              "label": "Item",
+              "slug": "output",
+              "isArray": false,
+              "type": "item"
+            },
+            "GraPv91alupysDDs": {
+              "id": "GraPv91alupysDDs",
+              "label": "Update",
+              "slug": "output",
+              "isArray": false,
+              "type": "any"
+            },
+            "mCqvN65y8BSFsHmJ": {
+              "id": "mCqvN65y8BSFsHmJ",
+              "label": "Info",
+              "slug": "output",
+              "isArray": false,
+              "type": "any"
+            }
+          }
+        },
+        "inputs": { "name": { "value": "updateItem" } },
+        "outs": { "out": { "connection": "mosxx1pPt8nuHzjX:ins:in" } }
+      },
+      {
+        "type": "list-contains",
+        "position": { "x": 764.5897435897431, "y": 49.955555555555435 },
+        "id": "3TzisWdJCV52USKq",
+        "inputs": {
+          "entry": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:znIlg3Jak9mV1rDw"
+          },
+          "list": { "connection": "7SBWh6kxs6p1ZXxQ:outputs:list" }
+        },
+        "outs": { "true": { "connection": "FxR5QChVGKXuHlVk:ins:in" } }
+      },
+      {
+        "type": "list-value",
+        "position": { "x": 478.5555555555552, "y": -47.666666666666686 },
+        "id": "7SBWh6kxs6p1ZXxQ",
+        "inputs": { "entry": { "value": "effect,condition" } }
+      },
+      {
+        "type": "execute-script",
+        "position": { "x": 1000.8232323232317, "y": 78.93686868686859 },
+        "id": "FxR5QChVGKXuHlVk",
+        "custom": {
+          "inputs": {
+            "sdcnqT1V3F1ZLH8k": {
+              "id": "sdcnqT1V3F1ZLH8k",
+              "label": "Update",
+              "slug": "input",
+              "isArray": false,
+              "type": "any"
+            }
+          },
+          "outputs": {
+            "V6VZsM2Ki074RVD6": {
+              "id": "V6VZsM2Ki074RVD6",
+              "label": "Valid Update?",
+              "slug": "output",
+              "isArray": false,
+              "type": "boolean"
+            }
+          }
+        },
+        "inputs": {
+          "sdcnqT1V3F1ZLH8k": {
+            "connection": "ZxdKeHGJd1pmBBiS:outputs:GraPv91alupysDDs"
+          },
+          "script": {
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst update = inputs[0];\n\nconst value = Number.isInteger(update?.system?.badge?.value) || Number.isInteger(update?.system?.value?.value)\n\nreturn [{type: \"boolean\", value}];"
+          }
+        },
+        "outs": { "out": { "connection": "D7runevSoOuUnOJh:ins:in" } }
+      },
+      {
+        "type": "split-boolean",
+        "inputs": {
+          "input": { "connection": "FxR5QChVGKXuHlVk:outputs:V6VZsM2Ki074RVD6" }
+        },
+        "position": { "x": 1356.6414141414134, "y": 97.73232323232327 },
+        "id": "D7runevSoOuUnOJh",
+        "outs": { "true": { "connection": "PEXiYyM5Qoo77FZK:ins:in" } }
+      }
+    ]
+  }
+]
