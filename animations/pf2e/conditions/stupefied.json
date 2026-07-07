@@ -15,7 +15,7 @@
       },
       "inputs": {
         "name": {
-          "value": "stupefied"
+          "value": "stupefied,update:stupefied"
         }
       }
     },
@@ -458,9 +458,5 @@
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
   "id": "x5FZ830xiKAYHuUa",
-  "tags": [
-    "action-posted",
-    "pf2e",
-    "conditions"
-  ]
+  "tags": ["action-posted", "pf2e", "conditions"]
 }

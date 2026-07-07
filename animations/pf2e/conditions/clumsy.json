@@ -15,7 +15,7 @@
       },
       "inputs": {
         "name": {
-          "value": "clumsy"
+          "value": "clumsy,update:clumsy"
         }
       }
     },
@@ -656,9 +656,5 @@
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
   "id": "2VRr7OxerNmxkjJr",
-  "tags": [
-    "action-posted",
-    "pf2e",
-    "conditions"
-  ]
+  "tags": ["action-posted", "pf2e", "conditions"]
 }

@@ -7,10 +7,9 @@
     "nodes": [
       {
         "type": "execute-animation",
-        "position": { "x": 1747.7463180061714, "y": 139.427805979577 },
+        "position": { "x": 1922.1907624506157, "y": 187.2055837573547 },
         "id": "PEXiYyM5Qoo77FZK",
         "inputs": {
-          "name": { "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77" },
           "targets": { "connection": "iLQqpDvy8aS7XhpM:outputs:targets" },
           "actor": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
@@ -21,7 +20,8 @@
           "item": { "connection": "ZxdKeHGJd1pmBBiS:outputs:TdOzBdcKWTlrReUL" },
           "options": {
             "connection": "mosxx1pPt8nuHzjX:outputs:Xk3O4efifslHIdqZ"
-          }
+          },
+          "name": { "connection": "Oib6d57AsodU4FR0:outputs:result" }
         }
       },
       {
@@ -118,7 +118,7 @@
       },
       {
         "type": "execute-script",
-        "position": { "x": 1000.8232323232317, "y": 78.93686868686859 },
+        "position": { "x": 1005.267676767676, "y": 58.936868686868536 },
         "id": "FxR5QChVGKXuHlVk",
         "custom": {
           "inputs": {
@@ -157,7 +157,39 @@
         },
         "position": { "x": 1356.6414141414134, "y": 97.73232323232327 },
         "id": "D7runevSoOuUnOJh",
-        "outs": { "true": { "connection": "PEXiYyM5Qoo77FZK:ins:in" } }
+        "outs": { "true": { "connection": "Oib6d57AsodU4FR0:ins:in" } }
+      },
+      {
+        "type": "format-text",
+        "state": "plain",
+        "position": { "x": 1595.7777777777776, "y": 151.70555555555552 },
+        "id": "Oib6d57AsodU4FR0",
+        "outs": { "out": { "connection": "PEXiYyM5Qoo77FZK:ins:in" } },
+        "custom": {
+          "inputs": {
+            "EhOg8swVOvjZDDqY": {
+              "id": "EhOg8swVOvjZDDqY",
+              "input": "slug",
+              "label": "slug",
+              "slug": "variable",
+              "type": "text"
+            },
+            "jhufYqifVCmc1Tb7": {
+              "id": "jhufYqifVCmc1Tb7",
+              "input": "type",
+              "label": "type",
+              "slug": "variable",
+              "type": "text"
+            }
+          }
+        },
+        "inputs": {
+          "jhufYqifVCmc1Tb7": { "value": "update" },
+          "plain": { "value": "@type:@slug" },
+          "EhOg8swVOvjZDDqY": {
+            "connection": "mosxx1pPt8nuHzjX:outputs:E85qTXVg1K7pfp77"
+          }
+        }
       }
     ]
   }

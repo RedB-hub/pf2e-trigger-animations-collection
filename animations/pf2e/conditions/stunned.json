@@ -412,7 +412,7 @@
       "id": "ictQRW7Z9AdiNNAX",
       "inputs": {
         "name": {
-          "value": "stunned"
+          "value": "stunned,update:stunned"
         }
       },
       "outs": {
@@ -469,9 +469,5 @@
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
   "id": "w8aGmWUuPArAJELj",
-  "tags": [
-    "action-posted",
-    "pf2e",
-    "conditions"
-  ]
+  "tags": ["action-posted", "pf2e", "conditions"]
 }
