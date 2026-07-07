@@ -77,7 +77,7 @@
       "id": "fOQmLPBTOTwEancN",
       "inputs": {
         "objectScale": {
-          "value": 1.5
+          "value": 2
         },
         "effect": {
           "connection": "DIKQm9cpxx67j5yf:outputs:effect"

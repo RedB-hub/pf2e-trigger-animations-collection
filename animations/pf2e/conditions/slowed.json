@@ -53,7 +53,7 @@
       "id": "fOQmLPBTOTwEancN",
       "inputs": {
         "objectScale": {
-          "value": 1.5
+          "value": 2
         },
         "effect": {
           "connection": "45GEVcFc0qjFLtc4:outputs:effect"
