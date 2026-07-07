@@ -161,8 +161,8 @@
     {
       "type": "play",
       "position": {
-        "x": 2869.872571872572,
-        "y": -54.696969696969745
+        "x": 3058.872571872572,
+        "y": -44.696969696969745
       },
       "id": "SW6ZeNxbHQVg27Dj",
       "inputs": {
@@ -185,14 +185,14 @@
         "minimal": {
           "connection": "SW6ZeNxbHQVg27Dj:ins:in"
         },
-        "low": {
-          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
-        },
-        "medium": {
-          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
-        },
         "high": {
           "connection": "icMdaJ1q3j1VHfPK:ins:in"
+        },
+        "medium": {
+          "connection": "cOu2ZKftHh44EhAC:ins:in"
+        },
+        "low": {
+          "connection": "cOu2ZKftHh44EhAC:ins:in"
         }
       }
     },
@@ -225,7 +225,7 @@
       },
       "outs": {
         "out": {
-          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+          "connection": "cOu2ZKftHh44EhAC:ins:in"
         }
       }
     },
@@ -259,7 +259,7 @@
       "id": "kOveTNFibKl6yrrI",
       "inputs": {
         "file": {
-          "value": "jb2a.markers.heart.pink.02"
+          "value": "jb2a.particles.swirl.greenyellow.02.01"
         },
         "effect": {
           "connection": "DIKQm9cpxx67j5yf:outputs:effect"
@@ -268,6 +268,30 @@
       "outs": {
         "out": {
           "connection": "3v5Py0kM4c1sAYDK:ins:in"
+        }
+      }
+    },
+    {
+      "type": "style",
+      "position": {
+        "x": 2825.923076923077,
+        "y": 45.5
+      },
+      "id": "cOu2ZKftHh44EhAC",
+      "inputs": {
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "value": "{\n  \"hue\": -160\n}"
+        },
+        "effect": {
+          "connection": "DIKQm9cpxx67j5yf:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
         }
       }
     }
