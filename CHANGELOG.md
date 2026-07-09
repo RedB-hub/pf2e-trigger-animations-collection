@@ -4,6 +4,10 @@
   - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Group: Bombs, Group: Bows, Group: Crossbows, Rage (@Chasarooni)
   - Fireball (@ChazPls)
 
+## 0.1.5
+
+- Format newly added items
+
 ## 0.1.4
 
 - Updated `ggg` minimum required version to `0.0.13`

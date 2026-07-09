@@ -2,9 +2,7 @@
   "name": "Group: Crossbow",
   "folder": "Weapons",
   "priority": -100,
-  "tags": [
-    "attack-roll"
-  ],
+  "tags": ["attack-roll"],
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
