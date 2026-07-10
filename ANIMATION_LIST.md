@@ -39,6 +39,7 @@
     - [Basic Actions](#basic-actions)
     - [Conditions](#conditions)
     - [Feats](#feats)
+      - [Ancestry Feats](#ancestry-feats)
       - [Class Feats](#class-feats)
       - [General Feats](#general-feats)
       - [Skill Feats](#skill-feats)
@@ -49,6 +50,8 @@
         - [Group](#group)
         - [Base](#base)
     - [Equipment](#equipment)
+      - [Weapons](#weapons-1)
+        - [Reload](#reload)
     - [Creatures](#creatures)
   - [SF2e](#sf2e)
     - [Class Features](#class-features-1)
@@ -157,6 +160,10 @@
 
 ### Feats
 
+#### Ancestry Feats
+
+- Change Shape 🔇🆓 (✍🏼 @Chasarooni)
+
 #### Class Feats
 
 #### General Feats
@@ -179,12 +186,21 @@
 - Bow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
+- Shield 🔊🆓 (✍🏼 @Chasarooni)
 
 ##### Base
 
 - Greatpick 🔊🆓 (✍🏼 @Chasarooni)
 
 ### Equipment
+
+#### Weapons
+
+##### Reload
+
+- Crossbow (Group) 🔊 (✍🏼 @Chasarooni)
+- Pepperbox 🔊 (✍🏼 @Chasarooni)
+- Slide Pistol 🔊 (✍🏼 @Chasarooni)
 
 ### Creatures
 
