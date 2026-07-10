@@ -1,6 +1,6 @@
 {
   "name": "Handler: Damage Roll",
-  "priority": 100,
+  "priority": 0,
   "description": "<p>Created by @Chasarooni</p>",
   "nodes": [
     {
@@ -329,10 +329,7 @@
     }
   ],
   "id": "wjYAO2U6AxngFVUB",
-  "tags": [
-    "PF2e Trove",
-    "handlers"
-  ],
+  "tags": ["PF2e Trove", "handlers"],
   "variables": {
     "5Yy2lI6uhThGLmVb:outputs:zlri3FyTeHzt34RB": {
       "isArray": true,
