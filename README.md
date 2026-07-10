@@ -21,6 +21,7 @@ The following are triggers specific to Trigger Animation Trove, for all other tr
 | Check Rolled                    | `check:item-slug`                                  | `trove-check:item-slug`                                  |
 | Damage Taken                    | `(damage\|healing\|persistent\|negated):item-slug` | `trove-(damage\|healing\|persistent\|negated):item-slug` |
 | Reload                          | `none`                                             | `reload:weapon-slug`                                     |
+| Damage Roll                     | `none`                                             | `damage-roll:item-slug`                                  |
 | Effect / Condition Badge Update | `none`                                             | `update:item-slug`                                       |
 | Roll Option Update              | `none`                                             | `update:item-slug`                                       |
 

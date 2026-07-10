@@ -1,8 +1,20 @@
 ## Unreleased
 
 - **New Animations**
-  - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Group: Bombs, Group: Bows, Group: Crossbows, Rage, Weapon Group: Shield, Reload: Crossbow (Group), Reload: Pepperbox, Reload: Slide Pistol, Change Shape (@Chasarooni)
+  - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Group: Bombs, Group: Bows, Group: Crossbows, Rage, Weapon Group: Shield, Reload: Crossbow (Group), Reload: Pepperbox, Reload: Slide Pistol, Change Shape, Sneak Attack, Sanguine Mutagen, (@Chasarooni)
   - Fireball (@ChazPls)
+
+## 0.3.0
+
+- **New**
+  - Add new animation trigger
+    - `Damage Roll` uses `damage-roll:slug`
+    - Note for anything that is an "addon" (think Sneak Attack) they use `damage-roll-addon:slug` and need to be added manually to the handler
+- **Update**
+  - Updated to `Trigger Animations` version `0.4.0`
+  - Updated `ggg` minimum required version to `0.0.15`
+  - Removed left in Console Logs
+  - Lowered Priority of `Handlers` to avoid overriding other animations generated in `0.4.0`
 
 ## 0.2.2
 

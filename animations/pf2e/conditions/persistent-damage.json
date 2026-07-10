@@ -15,7 +15,7 @@
       },
       "inputs": {
         "name": {
-          "value": "damage:persistent-damage,persistent-damage"
+          "value": "trove-damage:persistent-damage,condition:persistent-damage"
         }
       }
     },
@@ -118,6 +118,14 @@
             "slug": "path",
             "isArray": false,
             "type": "text"
+          },
+          "ZiOwfa4syZ0oDbQA": {
+            "id": "ZiOwfa4syZ0oDbQA",
+            "input": "system.persistent.damageType",
+            "label": "Damage Type",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
           }
         }
       },
@@ -144,51 +152,10 @@
       },
       "outs": {
         "out": {
-          "connection": "9PqW4yaP8rXJFNQz:ins:in"
+          "connection": "xfhOlgJ68CXaVPYJ:ins:in"
         }
       },
       "state": "object"
-    },
-    {
-      "type": "execute-script",
-      "position": {
-        "x": 548.888888888889,
-        "y": -349.55555555555566
-      },
-      "id": "9PqW4yaP8rXJFNQz",
-      "custom": {
-        "inputs": {
-          "NsKWnbyf1KdVaILy": {
-            "id": "NsKWnbyf1KdVaILy",
-            "label": "Roll Options",
-            "slug": "input",
-            "isArray": true,
-            "type": "text"
-          }
-        },
-        "outputs": {
-          "RgX9zjQqGgUUnOA7": {
-            "id": "RgX9zjQqGgUUnOA7",
-            "label": "Damage Type",
-            "slug": "output",
-            "isArray": false,
-            "type": "text"
-          }
-        }
-      },
-      "inputs": {
-        "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = [\n  'item:damage:type:acid',\n  'item:damage:type:bleed',  \n  'item:damage:type:bludgeoning',  \n  'item:damage:type:cold',  \n  'item:damage:type:electricity',  \n  'item:damage:type:fire',  \n  'item:damage:type:force',  \n  'item:damage:type:mental',  \n  'item:damage:type:piercing',  \n  'item:damage:type:poison',  \n  'item:damage:type:slashing',  \n  'item:damage:type:sonic',  \n  'item:damage:type:spirit',  \n  'item:damage:type:untyped',  \n  'item:damage:type:vitality',  \n  'item:damage:type:void',\n]\nconst rollOptions = inputs[0];\nconst type = rollOptions.find(r => options.includes(r))\n\nconst dmgType = {'item:damage:type:acid': 'acid',\n  'item:damage:type:bleed': 'bleed',  \n  'item:damage:type:bludgeoning': 'bludgeoning',  \n  'item:damage:type:cold': 'cold',  \n  'item:damage:type:electricity': 'electricity',  \n  'item:damage:type:fire': 'fire',  \n  'item:damage:type:force': 'force',  \n  'item:damage:type:mental': 'mental',  \n  'item:damage:type:piercing': 'piercing',  \n  'item:damage:type:poison': 'poison',  \n  'item:damage:type:slashing': 'slashing',  \n  'item:damage:type:sonic': 'sonic',  \n  'item:damage:type:spirit': 'spirit',  \n  'item:damage:type:untyped': 'untyped',  \n  'item:damage:type:vitality': 'vitality',  \n  'item:damage:type:void': 'void',\n}\n\nreturn [{type: \"text\", value: dmgType[type]}];"
-        },
-        "NsKWnbyf1KdVaILy": {
-          "connection": "ZOy2yUQRDp3DXNGr:outputs:options"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "xfhOlgJ68CXaVPYJ:ins:in"
-        }
-      }
     },
     {
       "type": "execute-script",
@@ -197,16 +164,16 @@
         "WswVjxhXBsm9lHG3": {
           "connection": "rjsZapkpjy0j53kl:outputs:li2LbkRiKwgVfTbL"
         },
-        "fsZchPU67Lzw6YQq": {
-          "connection": "9PqW4yaP8rXJFNQz:outputs:RgX9zjQqGgUUnOA7"
-        },
         "script": {
           "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst patreon = inputs[0]\nconst type = inputs[1];\nconst files = {\n  'acid': patreon ? \"jb2a.liquid.splash.green\" : 'jb2a.liquid.splash.blue',\n  'bleed': patreon ? \"jb2a.liquid.splash.red\" : 'jb2a.liquid.splash.blue',  \n  'bludgeoning': \"jb2a.impact.ground_crack.orange.01\",  \n  'cold': \"jb2a.impact_themed.ice_shard.blue\",  \n  'electricity': \"jb2a.impact.012.blue\",  \n  'fire': \"jb2a.shield_themed.below.fire.01.orange\",  \n  'force': \"jb2a.cast_shape.circle.single01.blue\",  \n  'mental': \"jb2a.template_circle.out_pulse.02.burst.bluewhite\",  \n  'piercing': patreon ? \"jb2a.spike_trap.10x10ft.top.no_base.normal.01\" : \"jb2a.spike_trap.10x10ft.top.holes.normal.01.01\",  \n  'poison': patreon ? \"jb2a.sleep.cloud.02.green\" : \"jb2a.sleep.cloud.02.pink\",  \n  'slashing': patreon ? \"jb2a.claws.400px.bright_orange\" : \"jb2a.claws.400px.red\",  \n  'sonic': \"jb2a.soundwave.02.blue\",  \n  'spirit': patreon ? \"jb2a.spirit_guardians.blue.no_ring\" : \"jb2a.spirit_guardians.blueyellow.ring\",  \n  'vitality': \"jb2a.divine_smite.caster.reversed.blueyellow\",  \n  'void': patreon ? \"jb2a.divine_smite.caster.reversed.dark_purple\" : \"jb2a.divine_smite.caster.reversed.blueyellow\",\n}\nconsole.log({f: files[type]})\nreturn [{type: \"text\", value: files[type]}];"
+        },
+        "fsZchPU67Lzw6YQq": {
+          "connection": "wjDV7ApiwKUADuEn:outputs:ZiOwfa4syZ0oDbQA"
         }
       },
       "position": {
-        "x": 898.6984126984121,
-        "y": -254.2944444444447
+        "x": 985.6984126984121,
+        "y": -306.2944444444447
       },
       "id": "xfhOlgJ68CXaVPYJ",
       "custom": {
@@ -300,16 +267,16 @@
         "WswVjxhXBsm9lHG3": {
           "connection": "rjsZapkpjy0j53kl:outputs:li2LbkRiKwgVfTbL"
         },
-        "fsZchPU67Lzw6YQq": {
-          "connection": "9PqW4yaP8rXJFNQz:outputs:RgX9zjQqGgUUnOA7"
-        },
         "script": {
           "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst patreon = inputs[0]\nconst type = inputs[1];\nconst filters = {\n  'acid': patreon ? {} : {\"hue\": -100},\n  'bleed': patreon ? {} : {\"hue\": 145},\n  'mental': patreon ? {} : {\"saturate\": 0.8, \"hue\": 20}, \n  'poison': patreon ? {} : {\"hue\": 180},\n  'sonic': {\"hue\": -50},  \n  'spirit': patreon ? {} : {\"hue\": 155}, \n  'void': patreon ? {} : {\"hue\": -165},\n}\n\nreturn [{type: \"text\", value: JSON.stringify(filters?.[type] || {})}];"
+        },
+        "fsZchPU67Lzw6YQq": {
+          "connection": "wjDV7ApiwKUADuEn:outputs:ZiOwfa4syZ0oDbQA"
         }
       },
       "position": {
-        "x": 1164.3650793650788,
-        "y": -328.88888888888914
+        "x": 1303.3650793650788,
+        "y": -426.88888888888914
       },
       "id": "XodgblzxCASuQwMY",
       "custom": {
@@ -354,9 +321,6 @@
         },
         "WswVjxhXBsm9lHG3": {
           "connection": "rjsZapkpjy0j53kl:outputs:li2LbkRiKwgVfTbL"
-        },
-        "fsZchPU67Lzw6YQq": {
-          "connection": "9PqW4yaP8rXJFNQz:outputs:RgX9zjQqGgUUnOA7"
         }
       },
       "position": {
@@ -489,6 +453,11 @@
   "name": "Persistent Damage",
   "description": "<p>Written by @Chasarooni</p>",
   "folder": "Conditions",
-  "id": "goHQHm15GxqHNOgG",
-  "tags": ["action-posted"]
+  "id": "0EIsKzWv7liC6aeY",
+  "tags": [
+    "action-posted",
+    "PF2e Trove",
+    "pf2e",
+    "conditions"
+  ]
 }

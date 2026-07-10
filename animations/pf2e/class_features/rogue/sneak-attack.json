@@ -1,0 +1,155 @@
+{
+  "name": "Sneak Attack",
+  "folder": "Class Features",
+  "priority": 100,
+  "nodes": [
+    {
+      "id": "X7VUHPm6sBZZPia3",
+      "position": {
+        "x": -65.04040404040393,
+        "y": 115.71717171717182
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "damage-roll-addon:sneak-attack"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "9euFav9yohcoQGhn:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 517.2087912087914,
+        "y": 104.49999999999989
+      },
+      "id": "ZJs073d6xuKJ3mtP",
+      "inputs": {
+        "origin": {
+          "connection": "9euFav9yohcoQGhn:outputs:gloMIJe56cxyqVL7"
+        },
+        "name": {
+          "value": "Sneak Attack"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "o5zDRir84D7G9PfN:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-actor",
+      "inputs": {
+        "input": {
+          "connection": "X7VUHPm6sBZZPia3:outputs:actor"
+        }
+      },
+      "position": {
+        "x": 241.47222222222229,
+        "y": 142.12222222222215
+      },
+      "id": "9euFav9yohcoQGhn",
+      "custom": {
+        "outputs": {
+          "gloMIJe56cxyqVL7": {
+            "id": "gloMIJe56cxyqVL7",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ZJs073d6xuKJ3mtP:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "ZJs073d6xuKJ3mtP:outputs:effect"
+        },
+        "location": {
+          "connection": "X7VUHPm6sBZZPia3:outputs:targets"
+        }
+      },
+      "position": {
+        "x": 1023.2857142857144,
+        "y": 114.14999999999986
+      },
+      "id": "eGJqDA3IKOJa86id",
+      "outs": {
+        "out": {
+          "connection": "tZx3gD7fub2eg684:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "ZJs073d6xuKJ3mtP:outputs:effect"
+        },
+        "objectScale": {
+          "value": 1.5
+        }
+      },
+      "position": {
+        "x": 1257.2857142857144,
+        "y": 102.14999999999986
+      },
+      "id": "tZx3gD7fub2eg684",
+      "outs": {
+        "out": {
+          "connection": "VXv28M6ynCBprU05:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "ZJs073d6xuKJ3mtP:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.sneak_attack.dark_green"
+        }
+      },
+      "position": {
+        "x": 806.2857142857144,
+        "y": 102.24999999999989
+      },
+      "id": "o5zDRir84D7G9PfN",
+      "outs": {
+        "out": {
+          "connection": "eGJqDA3IKOJa86id:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1582.9945054945056,
+        "y": 98.28571428571439
+      },
+      "id": "VXv28M6ynCBprU05",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    }
+  ],
+  "id": "czu8AJrmxOu13HS0"
+}

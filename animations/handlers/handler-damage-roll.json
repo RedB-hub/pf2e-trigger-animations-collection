@@ -1,0 +1,368 @@
+{
+  "name": "Handler: Damage Roll",
+  "priority": 100,
+  "description": "<p>Created by @Chasarooni</p>",
+  "nodes": [
+    {
+      "id": "5Yy2lI6uhThGLmVb",
+      "position": {
+        "x": 816.2857142857142,
+        "y": 136.8571428571429
+      },
+      "type": "animation-event",
+      "custom": {
+        "outputs": {
+          "ZrHkSL40BzrijFjr": {
+            "id": "ZrHkSL40BzrijFjr",
+            "label": "Outcome",
+            "slug": "path",
+            "isArray": false,
+            "type": "any"
+          },
+          "ovMBNPEPnEjbEwll": {
+            "id": "ovMBNPEPnEjbEwll",
+            "label": "Is Reroll",
+            "slug": "path",
+            "isArray": false,
+            "type": "any"
+          },
+          "3nv0Vq5R77zwNwI5": {
+            "id": "3nv0Vq5R77zwNwI5",
+            "label": "Animation List",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "zlri3FyTeHzt34RB": {
+            "id": "zlri3FyTeHzt34RB",
+            "label": "Slugs",
+            "slug": "path",
+            "isArray": true,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "c2KBo7wkkNXWDQ5r:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "damage-roll:handler"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 1585.857142857143,
+        "y": 124.14285714285717
+      },
+      "id": "5rxwWUI3s4DYirVB",
+      "custom": {
+        "inputs": {
+          "5E6lWUteSYs0PMsw": {
+            "id": "5E6lWUteSYs0PMsw",
+            "label": "Outcome",
+            "slug": "input",
+            "isArray": false,
+            "type": "any"
+          },
+          "1NXZ8AH8e79Nfdaq": {
+            "id": "1NXZ8AH8e79Nfdaq",
+            "label": "Is Reroll",
+            "slug": "input",
+            "isArray": false,
+            "type": "any"
+          }
+        }
+      },
+      "inputs": {
+        "1NXZ8AH8e79Nfdaq": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:ovMBNPEPnEjbEwll"
+        },
+        "5E6lWUteSYs0PMsw": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:ZrHkSL40BzrijFjr"
+        },
+        "options": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:options"
+        },
+        "targets": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:targets"
+        },
+        "sources": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:sources"
+        },
+        "actor": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:actor"
+        },
+        "item": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:item"
+        },
+        "name": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:3nv0Vq5R77zwNwI5"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "F1k0h5q3qyPaLKOs:ins:in"
+        }
+      }
+    },
+    {
+      "custom": {
+        "title": "Pre Addons"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 764.75,
+        "y": 606.5
+      },
+      "id": "gZrWmiyhcjFA2LvA",
+      "outs": {
+        "out": {
+          "connection": "gOMHyUjKJhFbwzZQ:ins:in"
+        }
+      }
+    },
+    {
+      "custom": {
+        "title": "Post Addons"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 770,
+        "y": 1086.25
+      },
+      "id": "JdqCayDgncAecQBF"
+    },
+    {
+      "outs": {
+        "out": {
+          "connection": "gZrWmiyhcjFA2LvA:ins:in"
+        }
+      },
+      "type": "__gate_entry__",
+      "position": {
+        "x": 1090.173076923077,
+        "y": 136.25
+      },
+      "id": "c2KBo7wkkNXWDQ5r"
+    },
+    {
+      "custom": {
+        "title": "Original Animation"
+      },
+      "type": "__gate_exit__",
+      "position": {
+        "x": 1332.5,
+        "y": 127.5
+      },
+      "id": "WGcIV8bT0YwiJVo5",
+      "outs": {
+        "out": {
+          "connection": "5rxwWUI3s4DYirVB:ins:in"
+        }
+      }
+    },
+    {
+      "outs": {
+        "out": {
+          "connection": "WGcIV8bT0YwiJVo5:ins:in"
+        }
+      },
+      "type": "__gate_entry__",
+      "position": {
+        "x": 2090.1111111111113,
+        "y": 584.3888888888889
+      },
+      "id": "zBHb5mwjGfTfbgX8"
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 1084.5555555555557,
+        "y": 601.8055555555555
+      },
+      "id": "gOMHyUjKJhFbwzZQ",
+      "inputs": {
+        "list": {
+          "connection": "6vo2t5n4t2WKBH8Z:outputs:entry"
+        },
+        "entry": {
+          "value": "sneak-attack"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "OCLOUKutnX5VoaA4:ins:in"
+        },
+        "false": {
+          "connection": "zBHb5mwjGfTfbgX8:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:zlri3FyTeHzt34RB"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 870.5555555555557,
+        "y": 690.2500000000001
+      },
+      "id": "6vo2t5n4t2WKBH8Z"
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 1037.1452991452993,
+        "y": 737.538888888889
+      },
+      "id": "OCLOUKutnX5VoaA4",
+      "outs": {
+        "out": {
+          "connection": "zBHb5mwjGfTfbgX8:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "damage-roll-addon:sneak-attack"
+        },
+        "actor": {
+          "connection": "gFvckgjPabWLgQen:outputs:entry"
+        },
+        "sources": {
+          "connection": "RmlohGLmWigUtqxX:outputs:entry"
+        },
+        "targets": {
+          "connection": "RRKZmvXrJ4OrhOdv:outputs:entry"
+        },
+        "item": {
+          "connection": "hEyXulkulzzf4epS:outputs:entry"
+        },
+        "options": {
+          "connection": "wVEQW0lsN3WWKELr:outputs:entry"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:actor"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 888,
+        "y": 809.75
+      },
+      "id": "gFvckgjPabWLgQen"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 887,
+        "y": 843.75
+      },
+      "id": "RmlohGLmWigUtqxX"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:targets"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 891,
+        "y": 877.75
+      },
+      "id": "RRKZmvXrJ4OrhOdv"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:item"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 895,
+        "y": 913.75
+      },
+      "id": "hEyXulkulzzf4epS"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:options"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 892,
+        "y": 952.75
+      },
+      "id": "wVEQW0lsN3WWKELr"
+    },
+    {
+      "outs": {
+        "out": {
+          "connection": "JdqCayDgncAecQBF:ins:in"
+        }
+      },
+      "type": "__gate_entry__",
+      "position": {
+        "x": 1921.673076923077,
+        "y": 120.25
+      },
+      "id": "F1k0h5q3qyPaLKOs"
+    }
+  ],
+  "id": "wjYAO2U6AxngFVUB",
+  "tags": [
+    "PF2e Trove",
+    "handlers"
+  ],
+  "variables": {
+    "5Yy2lI6uhThGLmVb:outputs:zlri3FyTeHzt34RB": {
+      "isArray": true,
+      "label": "Slugs",
+      "type": "text"
+    },
+    "5Yy2lI6uhThGLmVb:outputs:actor": {
+      "isArray": false,
+      "label": "Actor",
+      "type": "target"
+    },
+    "5Yy2lI6uhThGLmVb:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    },
+    "5Yy2lI6uhThGLmVb:outputs:targets": {
+      "isArray": true,
+      "label": "Targets",
+      "type": "target"
+    },
+    "5Yy2lI6uhThGLmVb:outputs:item": {
+      "isArray": false,
+      "label": "Item",
+      "type": "item"
+    },
+    "5Yy2lI6uhThGLmVb:outputs:options": {
+      "isArray": true,
+      "label": "Options",
+      "type": "text"
+    }
+  }
+}

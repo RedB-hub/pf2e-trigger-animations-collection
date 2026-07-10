@@ -1,7 +1,7 @@
 {
   "name": "Handler: Damage Taken",
   "folder": "System",
-  "priority": 100,
+  "priority": 0,
   "description": "<p>Created by @Chasarooni</p>",
   "nodes": [
     {

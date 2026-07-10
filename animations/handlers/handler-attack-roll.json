@@ -1,5 +1,5 @@
 {
-  "name": "Handler: Attack Roll/Action Post",
+  "name": "Handler: Attack Roll",
   "folder": "System",
   "priority": 100,
   "description": "<p>Created by @Chasarooni</p>",
@@ -223,7 +223,7 @@
           "connection": "kZwUhq5O0rWeJQYk:outputs:result"
         },
         "script": {
-          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconsole.log({inputs})\nreturn [];"
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nreturn [];"
         }
       },
       "outs": {
