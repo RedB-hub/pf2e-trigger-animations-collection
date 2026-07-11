@@ -4,6 +4,11 @@
   - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Group: Bombs, Group: Bows, Group: Crossbows, Rage, Weapon Group: Shield, Reload: Crossbow (Group), Reload: Pepperbox, Reload: Slide Pistol, Change Shape, Sneak Attack, Sanguine Mutagen, Healing Potion (@Chasarooni)
   - Fireball (@ChazPls)
 
+## 0.3.3
+
+- **Update**
+  - Reworked how the module asks you to enable new animations (Should be more responsive to you disabling them locally and avoid cases where it would fail to activate)
+
 ## 0.3.2
 
 - **Update**

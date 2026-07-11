@@ -10,21 +10,12 @@ export function setupSettings() {
     default: false,
   });
 
-  game.settings.register(MODULE_ID, "last-updated-settings", {
+  game.settings.register(MODULE_ID, "animations-asked-to-enable", {
     name: "",
     hint: "",
     scope: "world",
     config: false,
-    type: String,
-    default: "0.0.0",
-  });
-
-  game.settings.register(MODULE_ID, "module-active.jb2a-patreon", {
-    name: "",
-    hint: "",
-    scope: "world",
-    config: false,
-    type: Boolean,
-    default: false,
-  });
+    type: Array,
+    default: [],
+  })
 }

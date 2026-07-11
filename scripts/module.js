@@ -1,4 +1,7 @@
-import { askToAddNewAnimationsDialog } from "./enableNewAnimations.js";
+import {
+  askToAddNewAnimationsDialog,
+  waitForTriggerAnimations,
+} from "./enableNewAnimations.js";
 import { setupSettings } from "./settings.js";
 
 export const MODULE_ID = "pf2e-trigger-animations-trove";
@@ -14,8 +17,6 @@ Hooks.once("init", async function () {
 });
 
 Hooks.once("ready", async function () {
-  updateModulesEnabledSettings();
-
   if (
     game.user.isGM &&
     !game.settings.get(MODULE_ID, "disable-trigger-enable-spam")
@@ -23,16 +24,8 @@ Hooks.once("ready", async function () {
     reminderActivateAllTriggers();
   }
 
-  const lastUpdate = game.settings.get(MODULE_ID, "last-updated-settings");
-  if (
-    game.user.isGM &&
-    (foundry.utils.isNewerVersion(
-      game.modules.get(MODULE_ID).version,
-      lastUpdate,
-    ) ||
-      lastUpdate === "0.0.0")
-  ) {
-    await askToAddNewAnimationsDialog();
+  if (game.user.isGM) {
+    waitForTriggerAnimations(askToAddNewAnimationsDialog);
   }
 });
 
@@ -40,14 +33,5 @@ function reminderActivateAllTriggers() {
   ui.notifications.warn(
     "pf2e-trigger-animations-trove.module-settings.disable-trigger-enable-spam.message",
     { permanent: true, localize: true },
-  );
-}
-
-function updateModulesEnabledSettings() {
-  const isJb2aPatreonActive = game.modules.get("jb2a_patreon")?.active;
-  game.settings.set(
-    MODULE_ID,
-    "module-active.jb2a-patreon",
-    isJb2aPatreonActive,
   );
 }
