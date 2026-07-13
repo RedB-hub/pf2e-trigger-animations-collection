@@ -82,7 +82,7 @@ jobs:
 
       - name: Extract Changelog
         id: changelog
-        run: node .github/scripts/extract-changelog.mjs ${{ steps.get-version.outputs.v }} "## " "CHANGELOG.md"
+        run: node .github/scripts/extract-changelog.mjs ${{steps.get_version.outputs.version-without-v}} "## " "CHANGELOG.md"
       - name: Combine Trigger Files
         run: node ./macros/combine-animations.mjs
 
