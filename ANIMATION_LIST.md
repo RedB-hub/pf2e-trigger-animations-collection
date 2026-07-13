@@ -8,7 +8,6 @@
 - 💲 JB2a Patreon only
 - 🔊 Has Sounds
 - 🔇 No Sounds
-- ♾️ Has an optional persistent animation
 - ✅ Has full quality levels support
 
 - **Credit**
@@ -101,7 +100,7 @@
 
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
-- Scatter Scree 🔊🆓♾️ (✍🏼 @Chasarooni)
+- Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Focus Spells
 
@@ -109,11 +108,14 @@
 
 #### 1st Rank Spells
 
+- Harm 🔊🆓✅ (✍🏼 @Chasarooni)
+- Heal 🔊🆓✅ (✍🏼 @Chasarooni)
+
 #### 2nd Rank Spells
 
 #### 3rd Rank Spells
 
-- Fireball 🔇💲 (✍🏼 @ChazPls)
+- Fireball 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 
 #### 4th Rank Spells
 
@@ -135,35 +137,35 @@
 
 ### Conditions
 
-- Blinded 🔇🆓 (✍🏼 @Chasarooni)
-- Clumsy 🔇🆓 (✍🏼 @Chasarooni)
+- Blinded 🔇🆓✅ (✍🏼 @Chasarooni)
+- Clumsy 🔇🆓✅ (✍🏼 @Chasarooni)
 - Confused 🔇🆓✅ (✍🏼 @Chasarooni)
-- Controlled 🔇🆓 (✍🏼 @Chasarooni)
-- Dazzled 🔇🆓 (✍🏼 @Chasarooni)
-- Deafened 🔇🆓 (✍🏼 @Chasarooni)
-- Doomed 🔇🆓 (✍🏼 @Chasarooni)
-- Drained 🔇🆓 (✍🏼 @Chasarooni)
-- Dying 🔇🆓 (✍🏼 @Chasarooni)
-- Encumbered 🔇🆓 (✍🏼 @Chasarooni)
-- Enfeebled 🔇🆓 (✍🏼 @Chasarooni)
-- Fascinated 🔇🆓 (✍🏼 @Chasarooni)
-- Fatigued 🔇🆓 (✍🏼 @Chasarooni)
-- Fleeing 🔇🆓 (✍🏼 @Chasarooni)
-- Frightened 🔇🆓 (✍🏼 @Chasarooni)
-- Grabbed 🔇🆓 (✍🏼 @Chasarooni)
-- Immobilized 🔇🆓 (✍🏼 @Chasarooni)
-- Off-Guard 🔇🆓 (✍🏼 @Chasarooni)
-- Paralyzed 🔇🆓 (✍🏼 @Chasarooni)
-- Persistent Damage 🔇🆓 (✍🏼 @Chasarooni)
-- Petrified 🔇🆓 (✍🏼 @Chasarooni)
-- Prone 🔇🆓 (✍🏼 @Chasarooni)
-- Quickened 🔇🆓 (✍🏼 @Chasarooni)
-- Sickened 🔇🆓 (✍🏼 @Chasarooni)
-- Slowed 🔇🆓 (✍🏼 @Chasarooni)
-- Stunned 🔇🆓 (✍🏼 @Chasarooni)
-- Stupefied 🔇🆓 (✍🏼 @Chasarooni)
-- Unconscious 🔇🆓 (✍🏼 @Chasarooni)
-- Wounded 🔇🆓 (✍🏼 @Chasarooni)
+- Controlled 🔇🆓✅ (✍🏼 @Chasarooni)
+- Dazzled 🔇🆓✅ (✍🏼 @Chasarooni)
+- Deafened 🔇🆓✅ (✍🏼 @Chasarooni)
+- Doomed 🔇🆓✅ (✍🏼 @Chasarooni)
+- Drained 🔇🆓✅ (✍🏼 @Chasarooni)
+- Dying 🔇🆓✅ (✍🏼 @Chasarooni)
+- Encumbered 🔇🆓✅ (✍🏼 @Chasarooni)
+- Enfeebled 🔇🆓✅ (✍🏼 @Chasarooni)
+- Fascinated 🔇🆓✅ (✍🏼 @Chasarooni)
+- Fatigued 🔇🆓✅ (✍🏼 @Chasarooni)
+- Fleeing 🔇🆓✅ (✍🏼 @Chasarooni)
+- Frightened 🔇🆓✅ (✍🏼 @Chasarooni)
+- Grabbed 🔇🆓✅ (✍🏼 @Chasarooni)
+- Immobilized 🔇🆓✅ (✍🏼 @Chasarooni)
+- Off-Guard 🔇🆓✅ (✍🏼 @Chasarooni)
+- Paralyzed 🔇🆓✅ (✍🏼 @Chasarooni)
+- Persistent Damage 🔇🆓✅ (✍🏼 @Chasarooni)
+- Petrified 🔇🆓✅ (✍🏼 @Chasarooni)
+- Prone 🔇🆓✅ (✍🏼 @Chasarooni)
+- Quickened 🔇🆓✅ (✍🏼 @Chasarooni)
+- Sickened 🔇🆓✅ (✍🏼 @Chasarooni)
+- Slowed 🔇🆓✅ (✍🏼 @Chasarooni)
+- Stunned 🔇🆓✅ (✍🏼 @Chasarooni)
+- Stupefied 🔇🆓✅ (✍🏼 @Chasarooni)
+- Unconscious 🔇🆓✅ (✍🏼 @Chasarooni)
+- Wounded 🔇🆓✅ (✍🏼 @Chasarooni)
 
 ### Feats
 
@@ -192,6 +194,7 @@
 - Bomb 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Bow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Hammer 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
 
@@ -212,7 +215,7 @@
 
 ##### Reload
 
-- Crossbow (Group) 🔊 (✍🏼 @Chasarooni)
+- Crossbow (Weapon Group) 🔊 (✍🏼 @Chasarooni)
 - Pepperbox 🔊 (✍🏼 @Chasarooni)
 - Slide Pistol 🔊 (✍🏼 @Chasarooni)
 
