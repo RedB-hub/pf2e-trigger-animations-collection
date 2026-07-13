@@ -80,6 +80,7 @@ jobs:
         id: get_version
         uses: battila7/get-version-action@v2
 
+      # https://github.com/MrVauxs/trigger-animations/blob/master/.github/workflows/main.yml
       - name: Extract Changelog
         id: changelog
         run: node .github/scripts/extract-changelog.mjs ${{steps.get_version.outputs.version-without-v}} "## " "CHANGELOG.md"
