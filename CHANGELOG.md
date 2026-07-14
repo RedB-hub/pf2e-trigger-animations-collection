@@ -5,6 +5,10 @@
   - ~~`attack`~~ -> `trove-attack`
   - ~~`damage`~~ -> `trove-damage`
 
+## 0.4.3
+
+- Updated `ggg` minimum required version to `0.0.16`
+
 ## 0.4.2
 
 - **Animations**
