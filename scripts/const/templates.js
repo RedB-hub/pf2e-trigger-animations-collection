@@ -358,7 +358,7 @@ export const TEMPLATES = {
           inputs: {
             script: {
               value:
-                '/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: "number", value: x + y}];\n */\nconst source = inputs[0];\nconsole.log(y)\nconst x = -Math.max(source?.token?.width ?? 2, 2) - 0.5\nreturn [{type: "point", value: {x: x, y: 0}}];',
+                '/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: "number", value: x + y}];\n */\nconst source = inputs[0];\nconst x = -Math.max(source?.token?.width ?? 2, 2) - 0.5\nreturn [{type: "point", value: {x: x, y: 0}}];',
             },
             Gu41iNHzvLtFjPnQ: {
               connection: "4EhKePoFthjKy3cs:outputs:source",
