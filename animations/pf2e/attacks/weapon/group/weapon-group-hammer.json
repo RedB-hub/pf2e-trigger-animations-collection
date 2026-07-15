@@ -949,7 +949,7 @@
         "location": {
           "connection": "kUcR4H1H5eQZ1gcg:outputs:entry"
         },
-        "toTarget": {
+        "moveTowards": {
           "connection": "vwOrhrqUG5ARdzIA:outputs:entry"
         }
       },
@@ -1179,7 +1179,7 @@
         "sound": {
           "connection": "ngRzu4g8D05majo4:outputs:sound"
         },
-        "toTarget": {
+        "moveTowards": {
           "connection": "WwbE6xobx94anQpH:outputs:entry"
         },
         "location": {

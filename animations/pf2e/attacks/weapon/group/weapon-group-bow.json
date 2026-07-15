@@ -260,7 +260,7 @@
         "location": {
           "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
         },
-        "toTarget": {
+        "moveTowards": {
           "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
         }
       },

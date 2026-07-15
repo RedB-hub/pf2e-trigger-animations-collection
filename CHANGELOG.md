@@ -1,5 +1,14 @@
 ## Unreleased
 
+## 0.7.0
+
+- **New**
+  - Added new animation trigger
+    - `Skill Action Rolled` - uses `action:action-slug`
+- **Updated**
+  - Fixed issue causing Trove Templates sounds with incorrectly configured Location Nodes
+  - Fixed the above issue in any templates with that issue
+
 ## 0.6.2
 
 - **Updated**

@@ -904,5 +904,93 @@
         }
       }
     ]
+  },
+  {
+    "name": "Skill Checks",
+    "folder": "Animations",
+    "priority": 0,
+    "tags": ["pf2e", "sf2e"],
+    "id": "a6j5ma6HCrr6ckyd",
+    "nodes": [
+      {
+        "type": "execute-animation",
+        "position": { "x": 1039.4414236949078, "y": 225.95560949113622 },
+        "id": "zJiAEHL0uEXPz5FL",
+        "custom": {
+          "inputs": {
+            "5E6lWUteSYs0PMsw": {
+              "id": "5E6lWUteSYs0PMsw",
+              "label": "Outcome",
+              "slug": "input",
+              "isArray": false,
+              "type": "any"
+            },
+            "1NXZ8AH8e79Nfdaq": {
+              "id": "1NXZ8AH8e79Nfdaq",
+              "label": "Is Reroll",
+              "slug": "input",
+              "isArray": false,
+              "type": "any"
+            }
+          }
+        },
+        "inputs": {
+          "1NXZ8AH8e79Nfdaq": {
+            "connection": "NNGbeJ0Gi5YfgOol:outputs:reroll"
+          },
+          "5E6lWUteSYs0PMsw": {
+            "connection": "NNGbeJ0Gi5YfgOol:outputs:outcome"
+          },
+          "options": { "connection": "NNGbeJ0Gi5YfgOol:outputs:options" },
+          "item": { "connection": "NNGbeJ0Gi5YfgOol:outputs:item" },
+          "targets": { "connection": "NNGbeJ0Gi5YfgOol:outputs:target" },
+          "sources": { "connection": "NNGbeJ0Gi5YfgOol:outputs:roller" },
+          "actor": { "connection": "NNGbeJ0Gi5YfgOol:outputs:origin" },
+          "name": { "connection": "y9ZGBIEvTd1yHNzy:outputs:HyrCM6TXeQ5m2djZ" }
+        }
+      },
+      {
+        "type": "check-roll-event",
+        "position": { "x": 480.6666522503878, "y": 226.66664600372314 },
+        "id": "NNGbeJ0Gi5YfgOol",
+        "outs": { "out": { "connection": "y9ZGBIEvTd1yHNzy:ins:in" } },
+        "inputs": { "for": { "value": "skill-check" } },
+        "state": "check"
+      },
+      {
+        "type": "execute-script",
+        "position": { "x": 741, "y": 227 },
+        "id": "y9ZGBIEvTd1yHNzy",
+        "custom": {
+          "inputs": {
+            "JkKpB4SxHxM3NTy5": {
+              "id": "JkKpB4SxHxM3NTy5",
+              "label": "Roll Options",
+              "slug": "input",
+              "isArray": true,
+              "type": "text"
+            }
+          },
+          "outputs": {
+            "HyrCM6TXeQ5m2djZ": {
+              "id": "HyrCM6TXeQ5m2djZ",
+              "label": "Name",
+              "slug": "output",
+              "isArray": false,
+              "type": "text"
+            }
+          }
+        },
+        "inputs": {
+          "JkKpB4SxHxM3NTy5": {
+            "connection": "NNGbeJ0Gi5YfgOol:outputs:options"
+          },
+          "script": {
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = inputs[0];\nconst names = options.filter(ro => ro.startsWith(\"action:\")).join(', ')\nreturn [{type: \"text\", value: names];"
+          }
+        },
+        "outs": { "out": { "connection": "zJiAEHL0uEXPz5FL:ins:in" } }
+      }
+    ]
   }
 ]

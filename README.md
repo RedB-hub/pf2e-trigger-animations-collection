@@ -24,6 +24,7 @@ The following are triggers specific to Trigger Animation Trove, for all other tr
 | Damage Roll                     | `none`                                             | `damage-roll:item-slug`                                  |
 | Effect / Condition Badge Update | `none`                                             | `update:item-slug`                                       |
 | Roll Option Update              | `none`                                             | `update:item-slug`                                       |
+| Skill Action Rolled             | `none`                                             | `action:action-slug`                                     |
 
 The following are presets for particular sources
 

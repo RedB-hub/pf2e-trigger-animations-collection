@@ -315,7 +315,7 @@ export const TEMPLATES = {
             sound: {
               connection: "97SXbZXscrpeD7WA:outputs:sound",
             },
-            toTarget: {
+            location: {
               connection: "LrDNrzgvrkwQwaAZ:outputs:entry",
             },
             moveTowards: {
@@ -833,7 +833,7 @@ export const TEMPLATES = {
             sound: {
               connection: "97SXbZXscrpeD7WA:outputs:sound",
             },
-            toTarget: {
+            location: {
               connection: "LrDNrzgvrkwQwaAZ:outputs:entry",
             },
             moveTowards: {
