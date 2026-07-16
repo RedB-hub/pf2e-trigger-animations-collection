@@ -1,5 +1,10 @@
 ## Unreleased
 
+## 0.7.4
+
+- **Updated**
+  - Increased minimum `GGG` version to `0.0.17`
+
 ## 0.7.3
 
 - **Updated**
