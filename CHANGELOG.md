@@ -1,5 +1,10 @@
 ## Unreleased
 
+## 0.7.3
+
+- **Updated**
+  - Fixed issue with `Trove Template (Cone & Line)`
+
 ## 0.7.2
 
 - **Animations**
