@@ -2,6 +2,8 @@
 
 You can either submit an animation PR (please link it to an issue if possible) or create an issue to request one. This project is done primarily a for fun project, so no guarantees as to when or if someone will get around to creating a trigger for a request.
 
+*[Use Me to convert "Export Triggers" to individual files for a PR](https://chasarooniz.github.io/pf2e-trigger-animations-collection/)*
+
 ## Trigger Style Guidelines
 
 - Trigger name must match the Animation it is for
