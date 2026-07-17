@@ -19,8 +19,7 @@ Paste a video of it working here [ShareX](https://getsharex.com/) is an easy way
 closes
 
 ## Actually Check these (for my logging purposes)
-
+*you can check these after you submit the PR by just clicking them*
 - [ ] Includes Sound?
 - [ ] Has support for [JB2a](https://library.jb2a.com/) Free?
-- [ ] Has an optional Potato Mode (1 sound + 1 video) animation in it?
-- [ ] Includes an optional persistent animation?
+- [ ] Has a Low Quality Mode (1 sound + 1 video) animation in it?
