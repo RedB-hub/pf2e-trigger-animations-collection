@@ -1,0 +1,280 @@
+{
+  "priority": 0,
+  "nodes": [
+    {
+      "type": "visibility",
+      "position": {
+        "x": 1810.7643467643459,
+        "y": -255.3253968253968
+      },
+      "id": "Nrbbayr5LI09Phi2",
+      "inputs": {
+        "fadeInEase": {
+          "value": "easeOutCubic"
+        },
+        "fadeOutEase": {
+          "value": "easeInCubic"
+        },
+        "fadeInDuration": {
+          "value": 250
+        },
+        "fadeOutDuration": {
+          "value": 500
+        },
+        "effect": {
+          "connection": "ABAJCIw3G7MVsfps:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "H2COAV35MOZAqh7W:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 2758.674880674881,
+        "y": -235.3131313131312
+      },
+      "id": "SW6ZeNxbHQVg27Dj",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "get-quality",
+      "position": {
+        "x": 2173.920634920635,
+        "y": -233.10678210678205
+      },
+      "id": "H2COAV35MOZAqh7W",
+      "outs": {
+        "minimal": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        },
+        "high": {
+          "connection": "icMdaJ1q3j1VHfPK:ins:in"
+        },
+        "low": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        },
+        "medium": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        }
+      }
+    },
+    {
+      "type": "persist",
+      "position": {
+        "x": 2486.2857142857147,
+        "y": -37.28571428571422
+      },
+      "id": "icMdaJ1q3j1VHfPK",
+      "inputs": {
+        "persist": {
+          "value": true
+        },
+        "persistTokenPrototype": {
+          "value": true
+        },
+        "extraEndDuration": {
+          "value": 500
+        },
+        "effect": {
+          "connection": "ABAJCIw3G7MVsfps:outputs:effect"
+        },
+        "tieTo": {
+          "connection": "Rk8e96ye0h2EOeUn:outputs:70aosF6hawepmW0s"
+        },
+        "tieToDocs": {
+          "connection": "ictQRW7Z9AdiNNAX:outputs:sources"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        }
+      }
+    },
+    {
+      "type": "rotation",
+      "position": {
+        "x": 1096.9206349206352,
+        "y": -275.57142857142827
+      },
+      "id": "3v5Py0kM4c1sAYDK",
+      "inputs": {
+        "randomRotation": {
+          "value": true
+        },
+        "effect": {
+          "connection": "ABAJCIw3G7MVsfps:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "i2f6CpdhGS545nwN:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": -238.33333333333303,
+        "y": -253.66666666666674
+      },
+      "id": "Rk8e96ye0h2EOeUn",
+      "custom": {
+        "outputs": {
+          "4evIVjDjaVwQ28ss": {
+            "id": "4evIVjDjaVwQ28ss",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "70aosF6hawepmW0s": {
+            "id": "70aosF6hawepmW0s",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ABAJCIw3G7MVsfps:ins:in"
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "ictQRW7Z9AdiNNAX:outputs:item"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "position": {
+        "x": 801.2053157814084,
+        "y": -239.90482778809792
+      },
+      "id": "z69EAHOsKpcHHbbF",
+      "inputs": {
+        "file": {
+          "value": "jb2a.markers.stun.dark_teal.03"
+        },
+        "effect": {
+          "connection": "ABAJCIw3G7MVsfps:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "3v5Py0kM4c1sAYDK:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 114.67857142857201,
+        "y": -314.8809523809516
+      },
+      "id": "ABAJCIw3G7MVsfps",
+      "inputs": {
+        "name": {
+          "connection": "Rk8e96ye0h2EOeUn:outputs:4evIVjDjaVwQ28ss"
+        },
+        "origin": {
+          "connection": "Rk8e96ye0h2EOeUn:outputs:70aosF6hawepmW0s"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "mTuB4BUNUWMvww5v:ins:in"
+        }
+      }
+    },
+    {
+      "type": "animation-event",
+      "position": {
+        "x": -558.5555555555557,
+        "y": -288.55555555555554
+      },
+      "id": "ictQRW7Z9AdiNNAX",
+      "inputs": {
+        "name": {
+          "value": "effect:suppressed"
+        },
+        "softFail": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Rk8e96ye0h2EOeUn:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "position": {
+        "x": 490.3888888888887,
+        "y": -270.7222222222222
+      },
+      "id": "mTuB4BUNUWMvww5v",
+      "inputs": {
+        "effect": {
+          "connection": "ABAJCIw3G7MVsfps:outputs:effect"
+        },
+        "location": {
+          "connection": "ictQRW7Z9AdiNNAX:outputs:sources"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "z69EAHOsKpcHHbbF:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "position": {
+        "x": 1445.272283272283,
+        "y": -270.01269841269857
+      },
+      "id": "i2f6CpdhGS545nwN",
+      "inputs": {
+        "effect": {
+          "connection": "ABAJCIw3G7MVsfps:outputs:effect"
+        },
+        "objectScale": {
+          "value": 1.5
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Nrbbayr5LI09Phi2:ins:in"
+        }
+      },
+      "state": "object"
+    }
+  ],
+  "name": "Suppressed",
+  "description": "<p>Written by @Sasane</p>",
+  "folder": "Conditions",
+  "id": "pvhh1V8eKtOqdWEy",
+  "tags": [
+    "PF2e Trove",
+    "conditions",
+    "sf2e"
+  ]
+}
