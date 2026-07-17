@@ -54,7 +54,7 @@ function getTagsCategoryAndPriority({ path, originalTags, priority }) {
   switch (category) {
     case "attacks":
       tags.add(pathSegments[SEGMENTS.ATTACK_TYPE]);
-      const attackCategory = pathSegments?.[ATTACK_CATEGORY];
+      const attackCategory = pathSegments?.[SEGMENTS.ATTACK_CATEGORY];
       if (attackCategory) {
         if (attackCategory === "group") {
           newPriority = PRIORITY.GROUP;

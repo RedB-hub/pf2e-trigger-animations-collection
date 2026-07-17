@@ -1,5 +1,10 @@
 ## Unreleased
 
+## 0.8.1
+
+- **Updated**
+  - Fixed bug with `combine-animations` script causing attacks to not be included in the final result (🐛 @Suldrun45)
+
 ## 0.8.0
 
 - **New**
