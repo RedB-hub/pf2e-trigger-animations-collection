@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 0.8.3
+
+- Fixed issue with `Handler: Template` (🐛 @Suldrun45)
+
 ## 0.8.2
 
 - chore(clean)

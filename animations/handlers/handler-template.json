@@ -25,6 +25,11 @@
         "out": {
           "connection": "N4FgMIeH4LehevQt:ins:in"
         }
+      },
+      "inputs": {
+        "name": {
+          "value": "attack:*"
+        }
       }
     },
     {
