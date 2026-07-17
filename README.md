@@ -40,6 +40,7 @@ The following are presets for particular sources
 ## Animation Submission Guidelines
 
 [Click Me!](./CONTRIBUTING.md)
+
 _[Use Me to convert "Export Triggers" to individual files for a PR](https://chasarooniz.github.io/pf2e-trigger-animations-collection/)_
 
 ## Table of Contents
