@@ -57,6 +57,9 @@
         },
         "item": {
           "connection": "N4FgMIeH4LehevQt:outputs:cVoi0vGSYMkcIScZ"
+        },
+        "name": {
+          "connection": "sNQ0iL4YRcqvkw4B:outputs:result"
         }
       },
       "custom": {

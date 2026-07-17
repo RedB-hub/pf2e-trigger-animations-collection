@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 0.8.6
+
+- Forgot to plug in the name to `Handler: Template` (🐛 @Suldrun45)
+
 ## 0.8.5
 
 - **Updated**
