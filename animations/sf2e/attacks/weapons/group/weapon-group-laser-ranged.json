@@ -2,13 +2,7 @@
   "name": "Weapon Group: Laser (Ranged)",
   "folder": "Attacks",
   "priority": -100,
-  "tags": [
-    "sf2e",
-    "PF2e Trove",
-    "attack-roll",
-    "Weapons",
-    "Attacks"
-  ],
+  "tags": ["sf2e", "PF2e Trove", "attack-roll", "Weapons", "Attacks"],
   "description": "<p>Animation for Ranged weapons in the Laser weapon group</p><p>Made by @Sasane</p>",
   "nodes": [
     {
