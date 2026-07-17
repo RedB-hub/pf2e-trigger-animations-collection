@@ -24,7 +24,7 @@
       },
       "inputs": {
         "name": {
-          "value": "template:void-scour"
+          "value": "trove-template:void-scour"
         }
       },
       "outs": {

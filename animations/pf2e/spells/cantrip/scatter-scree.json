@@ -12,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "template:scatter-scree"
+          "value": "trove-template:scatter-scree"
         }
       },
       "outs": {

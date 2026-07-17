@@ -12,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "template:plasma-cannon"
+          "value": "trove-template:plasma-cannon"
         }
       },
       "outs": {
@@ -866,13 +866,5 @@
       "type": "target"
     }
   },
-  "tags": [
-    "spell",
-    "pf2e",
-    "template",
-    "PF2e Trove",
-    "spells",
-    "3rd"
-  ],
   "description": "<p><em>Made by @Sasane</em></p>"
 }

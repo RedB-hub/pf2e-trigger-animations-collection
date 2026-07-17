@@ -12,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "template:harm,damage-roll:harm"
+          "value": "trove-template:harm,damage-roll:harm"
         }
       },
       "outs": {

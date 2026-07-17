@@ -1,0 +1,205 @@
+{
+  "name": "Handler: Template",
+  "folder": "Handlers",
+  "priority": 0,
+  "nodes": [
+    {
+      "id": "scQ8zJQQYHCSSgDm",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "custom": {
+        "outputs": {
+          "rnEVAC7edxfB8iGt": {
+            "id": "rnEVAC7edxfB8iGt",
+            "label": "Template",
+            "slug": "path",
+            "isArray": false,
+            "type": "any"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "N4FgMIeH4LehevQt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 1259.4444444444443,
+        "y": 195.33333333333331
+      },
+      "id": "eH4142vTpQCspmMG",
+      "inputs": {
+        "options": {
+          "connection": "scQ8zJQQYHCSSgDm:outputs:options"
+        },
+        "targets": {
+          "connection": "scQ8zJQQYHCSSgDm:outputs:targets"
+        },
+        "sources": {
+          "connection": "scQ8zJQQYHCSSgDm:outputs:sources"
+        },
+        "actor": {
+          "connection": "scQ8zJQQYHCSSgDm:outputs:actor"
+        },
+        "USAoGb4Wyp7GSMcd": {
+          "connection": "scQ8zJQQYHCSSgDm:outputs:rnEVAC7edxfB8iGt"
+        },
+        "item": {
+          "connection": "N4FgMIeH4LehevQt:outputs:cVoi0vGSYMkcIScZ"
+        }
+      },
+      "custom": {
+        "inputs": {
+          "USAoGb4Wyp7GSMcd": {
+            "id": "USAoGb4Wyp7GSMcd",
+            "label": "Template",
+            "slug": "input",
+            "isArray": false,
+            "type": "region"
+          }
+        }
+      }
+    },
+    {
+      "type": "format-text",
+      "position": {
+        "x": 935,
+        "y": 213
+      },
+      "id": "sNQ0iL4YRcqvkw4B",
+      "custom": {
+        "inputs": {
+          "aessLq9h6kaS3HjI": {
+            "id": "aessLq9h6kaS3HjI",
+            "input": "a",
+            "label": "a",
+            "slug": "variable",
+            "type": "text"
+          },
+          "pKouzzHfVABGrRtd": {
+            "id": "pKouzzHfVABGrRtd",
+            "input": "b",
+            "label": "b",
+            "slug": "variable",
+            "type": "text"
+          },
+          "qgMvFU3Q8VuKnd2H": {
+            "id": "qgMvFU3Q8VuKnd2H",
+            "input": "c",
+            "label": "c",
+            "slug": "variable",
+            "type": "text"
+          },
+          "GlX9MkjYhY7mVwUt": {
+            "id": "GlX9MkjYhY7mVwUt",
+            "input": "d",
+            "label": "d",
+            "slug": "variable",
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "plain": {
+          "value": "@d:@a, @d:@b, @d:@c"
+        },
+        "GlX9MkjYhY7mVwUt": {
+          "value": "trove-template"
+        },
+        "aessLq9h6kaS3HjI": {
+          "connection": "N4FgMIeH4LehevQt:outputs:NsHmnmXRMTj8JIpd"
+        },
+        "pKouzzHfVABGrRtd": {
+          "connection": "N4FgMIeH4LehevQt:outputs:qSiHTLfq5PVuMZXj"
+        },
+        "qgMvFU3Q8VuKnd2H": {
+          "connection": "N4FgMIeH4LehevQt:outputs:VXAt9vtWvVwpt3k6"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "eH4142vTpQCspmMG:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 665.2932051132416,
+        "y": 200.99264452716397
+      },
+      "id": "N4FgMIeH4LehevQt",
+      "custom": {
+        "inputs": {
+          "I1VCbaVNmjwS6o68": {
+            "id": "I1VCbaVNmjwS6o68",
+            "label": "Item",
+            "slug": "input",
+            "isArray": false,
+            "type": "item"
+          },
+          "9B9zD9txRIAdfnRh": {
+            "id": "9B9zD9txRIAdfnRh",
+            "label": "Actor",
+            "slug": "input",
+            "isArray": false,
+            "type": "target"
+          }
+        },
+        "outputs": {
+          "cVoi0vGSYMkcIScZ": {
+            "id": "cVoi0vGSYMkcIScZ",
+            "label": "Item",
+            "slug": "output",
+            "isArray": false,
+            "type": "item"
+          },
+          "NsHmnmXRMTj8JIpd": {
+            "id": "NsHmnmXRMTj8JIpd",
+            "label": "Slug",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          },
+          "qSiHTLfq5PVuMZXj": {
+            "id": "qSiHTLfq5PVuMZXj",
+            "label": "Weapon Group",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          },
+          "VXAt9vtWvVwpt3k6": {
+            "id": "VXAt9vtWvVwpt3k6",
+            "label": "Base Item",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst item = inputs[0];\nconst source = inputs[1];\nconst actor = source?.actor;\nlet value = item;\nif (item?.type && item?.type !== \"strike\" && actor) {\n  if (item?.linkedWeapon) {\n    value = item.linkedWeapon\n  } else {\n    const strike = actor?.system?.actions?.find(a => a?.item?.rule?.item?.slug === item?.slug);\n    if (strike?.item) {\n      value = strike?.item;\n    }\n  }\n}\n\n// Handle NPC strike\nconst slug = value?.slug ||  game?.pf2e?.system?.sluggify(value.name);\nconst group = value?.system?.group ?? value?.group;\nconst base = value?.system?.baseItem ?? value?.baseType;\n\n\nreturn [{type: \"item\", value: value}, {type: \"text\", value: slug}, {type: \"text\", value: group}, {type: \"text\", value: base}];"
+        },
+        "9B9zD9txRIAdfnRh": {
+          "connection": "scQ8zJQQYHCSSgDm:outputs:actor"
+        },
+        "I1VCbaVNmjwS6o68": {
+          "connection": "scQ8zJQQYHCSSgDm:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "sNQ0iL4YRcqvkw4B:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "BlbInXjH5f83gWxu"
+}

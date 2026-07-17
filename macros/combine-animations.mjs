@@ -144,6 +144,7 @@ function getTriggerTags(animation) {
           tag = "reload";
           break;
         case "template":
+        case "trove-template":
           tag = "template";
           break;
         default:

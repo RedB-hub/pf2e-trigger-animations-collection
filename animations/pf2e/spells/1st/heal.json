@@ -12,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "template:heal,damage-roll:heal"
+          "value": "trove-template:heal,damage-roll:heal"
         }
       },
       "outs": {

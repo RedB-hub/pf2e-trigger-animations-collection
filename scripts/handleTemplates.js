@@ -92,7 +92,7 @@ function createAnimation({ templateString, ctx }) {
 function getTriggerNames(triggerNames) {
   return triggerNames.map((name) => {
     return name.replace(
-      /attack:|damage:|healing:|negated:/g,
+      /attack:|damage:|healing:|negated:|template/g,
       (txt) => "trove-" + txt,
     );
   });
