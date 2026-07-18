@@ -1,7 +1,7 @@
 {
   "name": "Weapon Group: Hammer",
   "folder": "Attacks",
-  "priority": 0,
+  "priority": -100,
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
@@ -283,9 +283,6 @@
         "effect": {
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
         },
-        "considerTokenScale": {
-          "value": true
-        },
         "objectScale": {
           "value": 4
         }
@@ -293,7 +290,7 @@
       "state": "object",
       "outs": {
         "out": {
-          "connection": "mGuBF1OhADzhyAjF:ins:in"
+          "connection": "DQ1fT2RqjeD5RIpm:ins:in"
         }
       }
     },
@@ -358,8 +355,8 @@
     {
       "type": "sound",
       "position": {
-        "x": 4096.589743589744,
-        "y": -27.988095238095298
+        "x": 4304.923076923078,
+        "y": -39.65476190476181
       },
       "id": "mGuBF1OhADzhyAjF",
       "outs": {
@@ -384,8 +381,8 @@
         }
       },
       "position": {
-        "x": 4657.988095238095,
-        "y": 13.233333333333292
+        "x": 4866.321428571429,
+        "y": 1.5666666666668334
       },
       "id": "GrrcQmm5vX0CaEeE",
       "custom": {
@@ -416,8 +413,8 @@
     {
       "type": "snd-file",
       "position": {
-        "x": 4900.661172161173,
-        "y": -166.41666666666646
+        "x": 5108.994505494507,
+        "y": -178.08333333333303
       },
       "id": "i5YpkyFNKf4TWy3I",
       "inputs": {
@@ -437,8 +434,8 @@
     {
       "type": "snd-file",
       "position": {
-        "x": 4904.411172161173,
-        "y": 48.583333333333314
+        "x": 5112.744505494507,
+        "y": 36.91666666666674
       },
       "id": "T4aBb6IcbaTMsMXo",
       "inputs": {
@@ -467,8 +464,8 @@
         }
       },
       "position": {
-        "x": 5432.738095238097,
-        "y": -105.3023809523807
+        "x": 5641.071428571431,
+        "y": -116.96904761904716
       },
       "id": "um5pmnVsTSnZw4b6"
     },
@@ -480,8 +477,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 5242.309523809525,
-        "y": -176.38095238095224
+        "x": 5450.642857142859,
+        "y": -188.0476190476188
       },
       "id": "8OIFaW6pYK3qh378"
     },
@@ -658,8 +655,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 4521.452380952381,
-        "y": -68.85714285714283
+        "x": 4729.785714285715,
+        "y": -80.5238095238094
       },
       "id": "x1lk21GKmYhFLWLE"
     },
@@ -1428,8 +1425,8 @@
         }
       },
       "position": {
-        "x": 4376.678571428572,
-        "y": -24.321428571428612
+        "x": 4585.0119047619055,
+        "y": -35.988095238095184
       },
       "id": "3t3APsFcapGeCZAU",
       "outs": {
@@ -1463,9 +1460,30 @@
         "y": 647.9220779220781
       },
       "id": "JB2LjAvW1crS6MEZ"
+    },
+    {
+      "type": "sprite",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "randomizeMirrorY": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 4052.6666666666683,
+        "y": -40.749999999999545
+      },
+      "id": "DQ1fT2RqjeD5RIpm",
+      "outs": {
+        "out": {
+          "connection": "mGuBF1OhADzhyAjF:ins:in"
+        }
+      }
     }
   ],
-  "id": "wnttGln9mMv0Ficl",
+  "id": "Hy1lgGNNcCbKxx9l",
   "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p><em>Modified by @Chasarooni for use in Trigger Animation Trove</em></p>",
   "variables": {
     "4gZJ8Gm9UjlhMc4G:outputs:source": {

@@ -1,6 +1,6 @@
 {
   "name": "Claw",
-  "folder": "Weapons",
+  "folder": "Attacks",
   "priority": 0,
   "nodes": [
     {
@@ -278,16 +278,34 @@
         "effect": {
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
         },
-        "considerTokenScale": {
-          "value": true
-        },
         "objectScale": {
           "value": 2.5
         }
       },
-      "state": "object"
+      "state": "object",
+      "outs": {
+        "out": {
+          "connection": "VlfXk8E5x0fRupg7:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sprite",
+      "position": {
+        "x": 2531.494505494505,
+        "y": 44.64285714285706
+      },
+      "id": "VlfXk8E5x0fRupg7",
+      "inputs": {
+        "randomizeMirrorY": {
+          "value": true
+        },
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        }
+      }
     }
   ],
-  "id": "5HML6X2Tx69QXfEu",
+  "id": "FNNhT3JHWTCnHtC1",
   "description": "<p><em>Made by @Chasarooni</em></p>"
 }

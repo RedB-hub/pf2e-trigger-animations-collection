@@ -1,6 +1,6 @@
 {
   "name": "Greatpick",
-  "folder": "Weapons",
+  "folder": "Attacks",
   "priority": -50,
   "nodes": [
     {
@@ -291,15 +291,15 @@
       "state": "object",
       "outs": {
         "out": {
-          "connection": "f0tjRItIgB2XVcyx:ins:in"
+          "connection": "773flzpMZOJeqAOU:ins:in"
         }
       }
     },
     {
       "type": "sound",
       "position": {
-        "x": 1856.8119658119658,
-        "y": -109.83333333333337
+        "x": 2570.561965811966,
+        "y": 70.16666666666663
       },
       "id": "f0tjRItIgB2XVcyx",
       "inputs": {
@@ -309,27 +309,110 @@
       },
       "outs": {
         "out": {
-          "connection": "rdVdjdw3xI66C2Ib:ins:in"
+          "connection": "cy9hgeXertSHKmIi:ins:in"
         }
       }
     },
     {
-      "type": "snd-volume",
+      "type": "sprite",
+      "position": {
+        "x": 2326.673076923077,
+        "y": 71.25
+      },
+      "id": "773flzpMZOJeqAOU",
+      "inputs": {
+        "randomizeMirrorY": {
+          "value": true
+        },
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "f0tjRItIgB2XVcyx:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
       "inputs": {
         "sound": {
           "connection": "f0tjRItIgB2XVcyx:outputs:sound"
         },
-        "volume": {
-          "value": 0.5
+        "preset": {
+          "value": "troveSound"
         }
       },
       "position": {
-        "x": 2181.333333333333,
-        "y": -272.97222222222223
+        "x": 2858,
+        "y": 70.74999999999994
       },
-      "id": "rdVdjdw3xI66C2Ib"
+      "id": "cy9hgeXertSHKmIi",
+      "outs": {
+        "out": {
+          "connection": "604zGSwt1R980KsT:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "position": {
+        "x": 3139.1730769230767,
+        "y": 69.15000000000009
+      },
+      "id": "604zGSwt1R980KsT",
+      "inputs": {
+        "sound": {
+          "connection": "f0tjRItIgB2XVcyx:outputs:sound"
+        },
+        "location": {
+          "connection": "YED0wXXBoveGmpdF:outputs:entry"
+        },
+        "moveTowards": {
+          "connection": "jjJBZA0YRAevytQg:outputs:entry"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2992.75,
+        "y": 28.75
+      },
+      "id": "YED0wXXBoveGmpdF"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2995.25,
+        "y": -20
+      },
+      "id": "jjJBZA0YRAevytQg"
     }
   ],
   "description": "<p><em>Made by @Chasarooni</em></p>",
-  "id": "Xg3Vj7Pakwt2vZvf"
+  "id": "NoYCa5o7Y7gg35mk",
+  "variables": {
+    "4gZJ8Gm9UjlhMc4G:outputs:source": {
+      "isArray": false,
+      "label": "Source",
+      "type": "target"
+    },
+    "4gZJ8Gm9UjlhMc4G:outputs:target": {
+      "isArray": false,
+      "label": "Target",
+      "type": "target"
+    }
+  }
 }

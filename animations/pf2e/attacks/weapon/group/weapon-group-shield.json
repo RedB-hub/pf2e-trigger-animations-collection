@@ -161,8 +161,8 @@
         }
       },
       "position": {
-        "x": 1597.925937834772,
-        "y": -166.6017374016812
+        "x": 1492.925937834772,
+        "y": -166.60173740168125
       },
       "id": "HrjxmdV9fn6KEOE0",
       "outs": {
@@ -267,16 +267,13 @@
     {
       "type": "scale",
       "position": {
-        "x": 2291.33333021089,
-        "y": 45.33330611936992
+        "x": 2285.08333021089,
+        "y": 47.83330611936992
       },
       "id": "7eJYxPPCfZY9S2YP",
       "inputs": {
         "effect": {
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
-        },
-        "considerTokenScale": {
-          "value": true
         },
         "objectScale": {
           "value": 4
@@ -285,15 +282,15 @@
       "state": "object",
       "outs": {
         "out": {
-          "connection": "h0p6mid1HU99KQJ9:ins:in"
+          "connection": "6JcyMp2AFpeGbBe3:ins:in"
         }
       }
     },
     {
       "type": "sound",
       "position": {
-        "x": 2289.6452991452984,
-        "y": -240.94444444444434
+        "x": 2813.3952991452984,
+        "y": 144.05555555555566
       },
       "id": "wewKUsT5boOGrmqF",
       "inputs": {
@@ -310,8 +307,8 @@
     {
       "type": "execute-script",
       "position": {
-        "x": 1992.3888888888887,
-        "y": -243.44444444444434
+        "x": 2811.1388888888887,
+        "y": 6.555555555555657
       },
       "id": "h0p6mid1HU99KQJ9",
       "custom": {
@@ -362,8 +359,8 @@
         }
       },
       "position": {
-        "x": 2620.166666666667,
-        "y": -242.44841269841243
+        "x": 3100.166666666667,
+        "y": 7.551587301587574
       },
       "id": "rreJMMvuTqGYXdYG",
       "outs": {
@@ -384,12 +381,33 @@
         }
       },
       "position": {
-        "x": 2910.369047619047,
-        "y": -238.99682539682544
+        "x": 3372.869047619047,
+        "y": 9.753174603174557
       },
       "id": "WzzVCqvsNZYlkUyu"
+    },
+    {
+      "type": "sprite",
+      "position": {
+        "x": 2530.173076923077,
+        "y": 50.75
+      },
+      "id": "6JcyMp2AFpeGbBe3",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "randomizeMirrorY": {
+          "value": true
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "h0p6mid1HU99KQJ9:ins:in"
+        }
+      }
     }
   ],
-  "id": "wUPamuOT8lD3OiJD",
+  "id": "222jCYl1pe3fui2Y",
   "description": "<p><em>Made by @Chasarooni</em></p>"
 }

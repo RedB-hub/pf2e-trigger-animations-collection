@@ -1,5 +1,16 @@
 ## Unreleased
 
+## 0.8.9
+
+- **Animations**
+  - **New**
+    - Deity Strike, Fist, Gauntlet, Healer's Glove, Lay on Hands(@ChasarooniZ)
+    - Weapon Group: Swords (@MrVauxs modified by @ChasarooniZ)
+  - **Updated**
+    - Claw, Weapon Group: Hammer, Weapon Group: Polearms, Weapon Group: Hammer, Greatpick _Added Randomize Mirror Y for melee attacks_ (@ChasarooniZ)
+- **Updated**
+  - Fixed the `Skill Check Actions` trigger which wasn't working
+
 ## 0.8.8
 
 - **Animations**

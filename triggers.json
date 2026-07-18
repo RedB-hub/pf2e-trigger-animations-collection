@@ -906,11 +906,11 @@
     ]
   },
   {
-    "name": "Skill Checks",
+    "name": "Skill Checks Actions",
     "folder": "Animations",
     "priority": 0,
     "tags": ["pf2e", "sf2e"],
-    "id": "a6j5ma6HCrr6ckyd",
+    "id": "N1RJ2suJncrKHmYW",
     "nodes": [
       {
         "type": "execute-animation",
@@ -986,7 +986,7 @@
             "connection": "NNGbeJ0Gi5YfgOol:outputs:options"
           },
           "script": {
-            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = inputs[0];\nconst names = options.filter(ro => ro.startsWith(\"action:\")).join(', ')\nreturn [{type: \"text\", value: names];"
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst options = inputs[0];\nconst names = options.filter(ro => ro.startsWith(\"action:\")).join(', ')\nreturn [{type: \"text\", value: names}];"
           }
         },
         "outs": { "out": { "connection": "zJiAEHL0uEXPz5FL:ins:in" } }

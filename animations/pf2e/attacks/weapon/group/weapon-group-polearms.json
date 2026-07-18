@@ -285,7 +285,7 @@
       "state": "object",
       "outs": {
         "out": {
-          "connection": "h0p6mid1HU99KQJ9:ins:in"
+          "connection": "Fz0nLrjlQGjPdMVh:ins:in"
         }
       }
     },
@@ -333,8 +333,8 @@
     {
       "type": "sound",
       "position": {
-        "x": 2289.6452991452984,
-        "y": -240.94444444444434
+        "x": 2802.9786324786314,
+        "y": 207.38888888888886
       },
       "id": "wewKUsT5boOGrmqF",
       "inputs": {
@@ -354,8 +354,8 @@
     {
       "type": "execute-script",
       "position": {
-        "x": 1992.3888888888887,
-        "y": -243.44444444444434
+        "x": 2807.3888888888887,
+        "y": 38.22222222222206
       },
       "id": "h0p6mid1HU99KQJ9",
       "custom": {
@@ -406,8 +406,8 @@
         }
       },
       "position": {
-        "x": 2802.166666666667,
-        "y": -252.44841269841243
+        "x": 3318.833333333334,
+        "y": 55.88492063492083
       },
       "id": "rreJMMvuTqGYXdYG"
     },
@@ -426,8 +426,8 @@
         }
       },
       "position": {
-        "x": 2582,
-        "y": -256.85
+        "x": 3098.666666666667,
+        "y": 51.483333333333235
       },
       "id": "lQRZyEkdVrHwcA4l",
       "outs": {
@@ -435,9 +435,30 @@
           "connection": "rreJMMvuTqGYXdYG:ins:in"
         }
       }
+    },
+    {
+      "type": "sprite",
+      "inputs": {
+        "randomizeMirrorY": {
+          "value": true
+        },
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        }
+      },
+      "position": {
+        "x": 2537.6666666666665,
+        "y": 43.66666666666663
+      },
+      "id": "Fz0nLrjlQGjPdMVh",
+      "outs": {
+        "out": {
+          "connection": "h0p6mid1HU99KQJ9:ins:in"
+        }
+      }
     }
   ],
-  "id": "BLi1vn2E9KM27uF5",
+  "id": "tvcwKL2NOKKiuh0Q",
   "description": "<p><em>Made by @Chasarooni</em></p>",
   "variables": {
     "mpa5CCtLfa7bjI71:outputs:QPWf9ZnV9bidhNIQ": {
