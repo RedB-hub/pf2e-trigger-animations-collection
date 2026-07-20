@@ -51,8 +51,7 @@ function registerPresets() {
       .radius(radius)
       .alwaysForGMs(true)
       .panSound()
-      .muffledEffect({ type: "lowpass", intensity: 4 })
-      .volume(0.5);
+      .muffledEffect({ type: "lowpass", intensity: 4 });
   });
 
   // Still Image Pop up Top of Character

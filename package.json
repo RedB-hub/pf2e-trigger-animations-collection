@@ -11,7 +11,8 @@
     "clean:jsons": "node macros/clean-jsons.mjs",
     "clean:final": "node macros/clear-final-animation.mjs",
     "test": "node macros/test-animations.mjs",
-    "link": "node link.mjs"
+    "link": "node link.mjs",
+    "update:contributors": "node macros/update-contributors.mjs"
   },
   "author": "Chasarooni",
   "license": "Apache-2.0",

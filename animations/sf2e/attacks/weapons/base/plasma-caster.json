@@ -626,6 +626,5 @@
       "label": "IsBoosted",
       "type": "text"
     }
-  },
-  "tags": ["PF2e Trove", "sf2e", "attacks", "weapons"]
+  }
 }

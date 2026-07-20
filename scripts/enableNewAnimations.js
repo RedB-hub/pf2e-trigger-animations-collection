@@ -65,6 +65,7 @@ async function enableAnimationsDialog(list) {
   const addNewAnimations = await foundry.applications.api.DialogV2.confirm({
     window: { title: "Trigger Animation Trove - Enable New Animations" },
     content: `<p>Do you want to enable the following new trigger animations?</p>${animationsContent}`,
+    classes: ["trigger-animation-trove-animation-enable-dialog"],
   });
   return addNewAnimations;
 }

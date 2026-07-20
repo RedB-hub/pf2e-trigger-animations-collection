@@ -36,7 +36,6 @@ The following are presets for particular sources
   - Always Play for GM
   - Pan Sound
   - Muffled Effect - Low Pass Filter
-  - Volume to `0.5` (add a volume node afterwards to override this)
 
 **Effect**
 

@@ -1,5 +1,23 @@
 ## Unreleased
 
+## 0.8.13
+
+- **Animations**
+  - **New**
+    - Weapon Group: Sling (@ChasarooniZ)
+    - Arc Emitter, Force Field, Screamer, Singing Coil, Starfall Pistol, Zero Cannon, (@Suldrun45)
+    - Plasma Caster _(with Boost)_ (@mechamaya 🎉 First Time contribution!)
+  - **Updated**
+    - Flamethrower _Update to chain sound so it sounds better, also added min quality sfx option_ (@Suldrun45)
+    - Lay on Hands _Fixed issue with condition causing the sound to double play_ (@ChasarooniZ)
+- **New**
+  - Added a button to the menu to force check to enable animations that aren't enabled
+- **Updated**
+  - Fixed styling of `Enable New Animations` so that you can scroll if the list is too long (💻@MrVauxs)
+  - Fixed `Reload` trigger where it would activate on every shot of any catridge based weapon
+  - Updated `GGG` to version `0.1.0``
+  - `troveSound` - Set `volume` to the default of `0.8` to work better with the new `Loudness Normalization`
+
 ## 0.8.12
 
 - **Updated**
@@ -8,8 +26,11 @@
 ## 0.8.11
 
 - **Animations**
+  - **New**
+    - Zero Cannon, Starfall Pistol, Singing Coil, Screamer, Arc Emitter, Force Field (@Suldrun45)
+    - Plasma Caster (with Boost) (@mechmaya)
   - **Updated**
-    - Electric Arc _removed console logs_ (@ChasarooniZ)
+    - Electric Arc _removed console logs_ (@Suldrun45)
 - **Updated**
   - Fixed issues with animations and templates that failed to have both `preload` and `local` on their `Play` nodes
 

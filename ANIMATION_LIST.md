@@ -220,6 +220,7 @@
 - Hammer 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
+- Sling 🔊🆓 (✍🏼 @Chasarooni)
 - Sword 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 
 ##### Base Item
@@ -329,9 +330,16 @@
 
 ##### Base Item
 
+- Arc Emitter 🔊🆓✅ (✍🏼 @Suldrun45)
+- Force Field 🔊🆓✅ (✍🏼 @Suldrun45)
 - Flamethrower 🔊🆓✅ (✍🏼 @Suldrun45)
+- Plasma Caster _Boost_ 🔊🆓✅ (✍🏼 @Suldrun45)
 - Plasma Cannon 🔊🆓✅ (✍🏼 @Suldrun45)
 - Rotolaser 🔊🆓✅ (✍🏼 @Suldrun45)
+- Screamer 🔊🆓✅ (✍🏼 @Suldrun45)
+- Singing Coil 🔊🆓✅ (✍🏼 @Suldrun45)
+- Starfall Pistol 🔊🆓✅ (✍🏼 @Suldrun45)
+- Zero Cannon 🔊🆓✅ (✍🏼 @Suldrun45)
 
 ##### Specific
 
