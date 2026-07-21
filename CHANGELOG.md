@@ -1,5 +1,14 @@
 ## Unreleased
 
+## 0.9.0
+
+- **Animations**
+  - **New**
+    - Acid Missile, Bite, Jaws, Thunderbolt, Conductive Downpour, Force Barrage, Cackle, Force Bolt, Force Fang, Weapon Group: Spear (@ChasarooniZ)
+    - Solar Weapon, Solar Flare (@Suldrun45)
+- **New**
+  - New trigger `Spell Message` uses `spell:spell-slug` and is for when a spell has no effect, damage roll, or template
+
 ## 0.8.13
 
 - **Animations**
@@ -15,6 +24,7 @@
 - **Updated**
   - Fixed styling of `Enable New Animations` so that you can scroll if the list is too long (💻@MrVauxs)
   - Fixed `Reload` trigger where it would activate on every shot of any catridge based weapon
+  - Grab targets from the message creator
   - Updated `GGG` to version `0.1.0``
   - `troveSound` - Set `volume` to the default of `0.8` to work better with the new `Loudness Normalization`
 

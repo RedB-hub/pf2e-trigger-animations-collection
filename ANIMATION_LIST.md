@@ -57,7 +57,7 @@
       - [Weapons](#weapons-1)
         - [Reload](#reload)
       - [Worn](#worn)
-    - [Creatures](#creatures)
+    - [Creatures Actions](#creatures-actions)
   - [SF2e](#sf2e)
     - [Class Features](#class-features-1)
     - [Spells](#spells-1)
@@ -88,7 +88,7 @@
         - [Base Item](#base-item-1)
         - [Specific](#specific-1)
     - [Equipment](#equipment-1)
-    - [Creatures](#creatures-1)
+    - [Creatures](#creatures)
 
 ## PF2e
 
@@ -120,11 +120,15 @@
 
 #### Focus Spells
 
+- Cackle 🔊🆓 (✍🏼 @Chasarooni)
+- Force Bolt 🔊🆓 (✍🏼 @Chasarooni)
+- Force Fang 🔊🆓 (✍🏼 @Chasarooni)
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
 
 #### 1st Rank Spells
 
+- Force Barrage 🔊🆓 (✍🏼 @Chasarooni)
 - Harm 🔊🆓✅ (✍🏼 @Chasarooni)
 - Heal 🔊🆓✅ (✍🏼 @Chasarooni)
 
@@ -206,8 +210,12 @@
 
 #### Unarmed Strikes
 
+- Acid Missile 🔊🆓 (✍🏼 @Chasarooni)
+- Bite 🔇🆓 (✍🏼 @Chasarooni)
 - Claw 🔇🆓 (✍🏼 @Chasarooni)
+- Jaws 🔇🆓 (✍🏼 @Chasarooni)
 - Fist 🔊🆓 (✍🏼 @Chasarooni)
+- Thunderbolt 🔊🆓 (✍🏼 @Chasarooni)
 
 #### Weapons
 
@@ -221,6 +229,7 @@
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 - Shield 🔊🆓 (✍🏼 @Chasarooni)
 - Sling 🔊🆓 (✍🏼 @Chasarooni)
+- Spear 🔊🆓 (✍🏼 @Chasarooni)
 - Sword 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 
 ##### Base Item
@@ -257,7 +266,9 @@
 
 - Healer's Glove 🔊🆓 (✍🏼 @Chasarooni)
 
-### Creatures
+### Creatures Actions
+
+- Conductive Downpour 🔊🆓 (✍🏼 @Chasarooni)
 
 ## SF2e
 
@@ -333,11 +344,13 @@
 - Arc Emitter 🔊🆓✅ (✍🏼 @Suldrun45)
 - Force Field 🔊🆓✅ (✍🏼 @Suldrun45)
 - Flamethrower 🔊🆓✅ (✍🏼 @Suldrun45)
-- Plasma Caster _Boost_ 🔊🆓✅ (✍🏼 @Suldrun45)
+- Plasma Caster _Boost_ 🔊🆓✅ (✍🏼 @mechamaya)
 - Plasma Cannon 🔊🆓✅ (✍🏼 @Suldrun45)
 - Rotolaser 🔊🆓✅ (✍🏼 @Suldrun45)
 - Screamer 🔊🆓✅ (✍🏼 @Suldrun45)
 - Singing Coil 🔊🆓✅ (✍🏼 @Suldrun45)
+- Solar Flare 🔊🆓✅ (✍🏼 @Suldrun45)
+- Solar Weapon 🔊🆓✅ (✍🏼 @Suldrun45)
 - Starfall Pistol 🔊🆓✅ (✍🏼 @Suldrun45)
 - Zero Cannon 🔊🆓✅ (✍🏼 @Suldrun45)
 

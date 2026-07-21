@@ -1,0 +1,206 @@
+{
+  "id": "IVn1ekK2JrK4wXsL",
+  "name": "Bite",
+  "folder": "Attacks",
+  "priority": 0,
+  "description": "<p>Made by @Chasarooni</p><p><strong>Trigger: <code>trove-attack:bite</code></strong></p>",
+  "nodes": [
+    {
+      "id": "K67PikFg6BEEeij9",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "trove-attack:bite"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "MS1KUisYzh5wqz0S:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 903.7802197802198,
+        "y": 207.6428571428571
+      },
+      "id": "l6TU4qOSNSDqW7pJ",
+      "inputs": {
+        "name": {
+          "connection": "MS1KUisYzh5wqz0S:outputs:Az10aLfQSOcQgDZR"
+        },
+        "origin": {
+          "connection": "MS1KUisYzh5wqz0S:outputs:j68sJfrw4pDbKh9B"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "aHn6US8B62H5elMs:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "inputs": {
+        "input": {
+          "connection": "K67PikFg6BEEeij9:outputs:item"
+        }
+      },
+      "position": {
+        "x": 671,
+        "y": 221.14999999999998
+      },
+      "id": "MS1KUisYzh5wqz0S",
+      "custom": {
+        "outputs": {
+          "Az10aLfQSOcQgDZR": {
+            "id": "Az10aLfQSOcQgDZR",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "j68sJfrw4pDbKh9B": {
+            "id": "j68sJfrw4pDbKh9B",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "l6TU4qOSNSDqW7pJ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "l6TU4qOSNSDqW7pJ:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.bite.400px.red"
+        }
+      },
+      "position": {
+        "x": 1188.1428571428573,
+        "y": 203.5357142857144
+      },
+      "id": "aHn6US8B62H5elMs",
+      "outs": {
+        "out": {
+          "connection": "uvysII8KbgqrMtbY:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "l6TU4qOSNSDqW7pJ:outputs:effect"
+        },
+        "objectScale": {
+          "value": 2
+        },
+        "uniform": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 1403.857142857143,
+        "y": 205.7214285714286
+      },
+      "id": "uvysII8KbgqrMtbY",
+      "outs": {
+        "out": {
+          "connection": "7ZyKTTX4mA2kQANY:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "l6TU4qOSNSDqW7pJ:outputs:effect"
+        },
+        "attachTo": {
+          "value": true
+        },
+        "location": {
+          "connection": "XcTv9LhuZiDfDyWi:outputs:entry"
+        },
+        "bindScale": {
+          "value": false
+        }
+      },
+      "position": {
+        "x": 1639.5714285714284,
+        "y": 198.57857142857142
+      },
+      "id": "7ZyKTTX4mA2kQANY",
+      "outs": {
+        "out": {
+          "connection": "BSyE50adyjYYN1Mx:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1885.93894993895,
+        "y": 198.27777777777783
+      },
+      "id": "BSyE50adyjYYN1Mx",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "K67PikFg6BEEeij9:outputs:targets"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1439.7777777777774,
+        "y": 140.66666666666669
+      },
+      "id": "XcTv9LhuZiDfDyWi"
+    }
+  ],
+  "variables": {
+    "K67PikFg6BEEeij9:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    },
+    "MS1KUisYzh5wqz0S:outputs:Az10aLfQSOcQgDZR": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    },
+    "K67PikFg6BEEeij9:outputs:targets": {
+      "isArray": true,
+      "label": "Targets",
+      "type": "target"
+    }
+  }
+}
