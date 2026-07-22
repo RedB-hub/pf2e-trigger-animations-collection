@@ -1,5 +1,7 @@
 ## Unreleased
 
+## 0.9.2
+
 - **Animations**
   - **New**
     - Motivating Ringtone (@Suldrun45)
