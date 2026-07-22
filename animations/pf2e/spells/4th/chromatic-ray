@@ -1,0 +1,315 @@
+{
+  "id": "DFYSGbgClcGhog8B",
+  "name": "Chromatic Ray",
+  "folder": "Spells",
+  "priority": 0,
+  "description": "<p>Created by @RedB</p><p>Trigger: trove-attack:chromatic-ray</p>",
+  "nodes": [
+    {
+      "id": "Itv8eCVKkxM3BZP4",
+      "type": "animation-event",
+      "position": {
+        "x": 528.8360408698102,
+        "y": 323.01579189687584
+      },
+      "inputs": {
+        "name": {
+          "value": "trove-attack:chromatic-ray"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "rwSGchBq8kUek5S6:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 1284.1187209356885,
+        "y": 322.69050218035557
+      },
+      "id": "t4ec1zwt073ETfTp",
+      "outs": {
+        "out": {
+          "connection": "joiJrNd0jn1kubv1:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "state": "default",
+      "inputs": {
+        "effect": {
+          "connection": "t4ec1zwt073ETfTp:outputs:effect"
+        },
+        "file": {
+          "connection": "PwM4mi083J4UdDqB:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 1592.235243052378,
+        "y": 322.65006968477223
+      },
+      "id": "joiJrNd0jn1kubv1",
+      "outs": {
+        "out": {
+          "connection": "5owfw8CZg0nFwGDI:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "state": "stretchTo",
+      "inputs": {
+        "effect": {
+          "connection": "5owfw8CZg0nFwGDI:outputs:effect"
+        },
+        "towards": {
+          "connection": "SqejXQJGUFvG3o0T:outputs:entry"
+        },
+        "gridUnits": {
+          "value": true
+        },
+        "randomOffset": {
+          "value": 0.30000000000000004
+        }
+      },
+      "position": {
+        "x": 2103.600162434922,
+        "y": 322.4330488844562
+      },
+      "id": "4eFWKvMGhSBo8ptE",
+      "outs": {
+        "out": {
+          "connection": "7sb5NO58OEaCmoXf:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "joiJrNd0jn1kubv1:outputs:effect"
+        },
+        "location": {
+          "connection": "BXmZQyxbr3uRFJ0T:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 1851.1136088884657,
+        "y": 323.17389940171404
+      },
+      "id": "5owfw8CZg0nFwGDI",
+      "outs": {
+        "out": {
+          "connection": "4eFWKvMGhSBo8ptE:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "Itv8eCVKkxM3BZP4:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1682.563170716982,
+        "y": 502.843899312948
+      },
+      "id": "BXmZQyxbr3uRFJ0T"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "Itv8eCVKkxM3BZP4:outputs:targets"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1688.5948581728233,
+        "y": 541.0451049216703
+      },
+      "id": "SqejXQJGUFvG3o0T"
+    },
+    {
+      "type": "style",
+      "inputs": {
+        "effect": {
+          "connection": "7sb5NO58OEaCmoXf:outputs:effect"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "connection": "hjecGyPD0YrBOXpy:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 2679.5210389594868,
+        "y": 323.0276606964909
+      },
+      "id": "e8ufI7cgVzogcN5z",
+      "outs": {
+        "out": {
+          "connection": "jshyq8ad5Rp6YK8C:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "factor",
+      "inputs": {
+        "effect": {
+          "connection": "4eFWKvMGhSBo8ptE:outputs:effect"
+        }
+      },
+      "position": {
+        "x": 2416.8277364036776,
+        "y": 322.8564390937569
+      },
+      "id": "7sb5NO58OEaCmoXf",
+      "outs": {
+        "out": {
+          "connection": "e8ufI7cgVzogcN5z:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 778.4859800832646,
+        "y": 322.55548410624397
+      },
+      "id": "rwSGchBq8kUek5S6",
+      "custom": {
+        "outputs": {
+          "WiSDeSUlsZzgzGOu": {
+            "id": "WiSDeSUlsZzgzGOu",
+            "label": "rayFile",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          },
+          "v196tDfKb8TE7Xrf": {
+            "id": "v196tDfKb8TE7Xrf",
+            "label": "rayHue",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        },
+        "inputs": {
+          "hVLAs225R77tu1sB": {
+            "id": "hVLAs225R77tu1sB",
+            "label": "color",
+            "slug": "input",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "let color = inputs[0];\n\n// 1. Colors\nlet rayFile;\nlet rayHue;\n\nif (color == \"red\"){\n    rayFile = \"jb2a.scorching_ray.02.orange\"\n    rayHue = `{\"hue\": -18}`\n} else if (color == \"orange\"){\n    rayFile = \"jb2a.scorching_ray.02.orange\"\n    rayHue = `{}`\n} else if (color == \"yellow\"){\n    rayFile = \"jb2a.scorching_ray.02.orange\"\n    rayHue = `{\"hue\": 18}`\n} else if (color == \"green\"){\n    rayFile = \"jb2a.scorching_ray.02.green\"\n    rayHue = `{}`\n} else if (color == \"blue\"){\n    rayFile = \"jb2a.scorching_ray.02.blue\"\n    rayHue = `{}`\n} else if (color == \"indigo\"){\n    rayFile = \"jb2a.scorching_ray.02.orange\"\n    rayHue = `{\"hue\": -160}`\n} else if (color == \"violet\"){\n    rayFile = \"jb2a.scorching_ray.02.purple\"\n    rayHue = `{}`\n} else if (color == \"intense\"){\n    rayFile = \"jb2a.scorching_ray.02.pink\"\n    rayHue = `{}`\n}\n\nreturn [\n  {type: \"text\", value: rayFile},\n  {type: \"text\", value: rayHue}\n];"
+        },
+        "YuTjzyg7aFMHLIjB": {
+          "connection": "iowjIVd19XL2Pmez:outputs:entry"
+        },
+        "hVLAs225R77tu1sB": {
+          "value": "green"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "t4ec1zwt073ETfTp:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "rwSGchBq8kUek5S6:outputs:WiSDeSUlsZzgzGOu"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1449.7012635741428,
+        "y": 453.56682743563454
+      },
+      "id": "PwM4mi083J4UdDqB"
+    },
+    {
+      "type": "layer",
+      "inputs": {
+        "zIndex": {
+          "value": 1
+        },
+        "effect": {
+          "connection": "e8ufI7cgVzogcN5z:outputs:effect"
+        }
+      },
+      "position": {
+        "x": 2940.254253734187,
+        "y": 323.291841785761
+      },
+      "id": "jshyq8ad5Rp6YK8C",
+      "outs": {
+        "out": {
+          "connection": "KaZocZzDp7NkCTMG:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 3287.135010573522,
+        "y": 323.29795399777765
+      },
+      "id": "KaZocZzDp7NkCTMG"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "rwSGchBq8kUek5S6:outputs:v196tDfKb8TE7Xrf"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2546.222141954107,
+        "y": 774.4444545349631
+      },
+      "id": "hjecGyPD0YrBOXpy"
+    }
+  ],
+  "variables": {
+    "Itv8eCVKkxM3BZP4:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    },
+    "Itv8eCVKkxM3BZP4:outputs:targets": {
+      "isArray": true,
+      "label": "Targets",
+      "type": "target"
+    },
+    "rwSGchBq8kUek5S6:outputs:WiSDeSUlsZzgzGOu": {
+      "isArray": false,
+      "label": "rayFile",
+      "type": "text"
+    },
+    "rwSGchBq8kUek5S6:outputs:v196tDfKb8TE7Xrf": {
+      "isArray": false,
+      "label": "rayHue",
+      "type": "text"
+    }
+  },
+  "tags": [
+    "PF2e Trove",
+    "pf2e",
+    "spells",
+    "4th"
+  ]
+}
