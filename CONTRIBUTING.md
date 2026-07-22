@@ -21,7 +21,8 @@ _[Use Me to convert "Export Triggers" to individual files for a PR](https://chas
 
 ## Animation Submission Guidelines
 
-**Methodology** _These are __animations__ and are intended to in general be solely animations, and not to interfere with the normal process of playing the game outside of showing animations_
+**Methodology** _These are **animations** and are intended to in general be solely animations, and not to interfere with the normal process of playing the game outside of showing animations_
+
 - **Acceptable Sources**
   - Currently the following are acceptable sources for animations/SFX
     - **[JB2A](https://www.patreon.com/JB2A)** (Note animations are built for the Patreon version primarily, but some may also have workarounds to support the free version)

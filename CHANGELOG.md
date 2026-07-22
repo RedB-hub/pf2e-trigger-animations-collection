@@ -1,5 +1,12 @@
 ## Unreleased
 
+- **Animations**
+  - **New**
+    - Motivating Ringtone (@Suldrun45)
+    - Blazing Bolt, Fiery Body, Ignition, Volcanic Eruption, Dessicate (@ChasarooniZ)
+- **Updated**
+  - Updated the `Template (Bursts & Emanations)` to be a bit nicer
+
 ## 0.9.1
 
 - **Animations**
